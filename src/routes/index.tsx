@@ -6,7 +6,7 @@ import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { TestimonialsMarquee } from "@/components/TestimonialsMarquee";
 import logoNavbar from "@/assets/logo-abraph-navbar.png.asset.json";
 import logoSelo from "@/assets/logo-abraph-selo.png.asset.json";
-import heroCoast from "@/assets/uploads/4308.jpeg";
+import heroCoast from "@/assets/hero-coast.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
