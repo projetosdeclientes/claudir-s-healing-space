@@ -32,11 +32,11 @@ const pains = [
 ];
 
 const faq = [
-  ["O atendimento é mesmo 100% on-line?", "Sim, todas as sessões acontecem on-line, com total privacidade."],
-  ["Quanto tempo dura cada sessão?", "Aproximadamente 60 minutos."],
-  ["Qual é a abordagem utilizada?", "A TRG (Terapia de Reprocessamento Generativo) é a principal abordagem."],
-  ["Como faço para agendar?", "Basta chamar no WhatsApp para conversarmos sobre o melhor horário."],
-  ["Quais são os valores?", "Sessão individual: R$ 200. Programa Reequilíbrio Emocional (8 sessões): R$ 1.360."],
+  ["As sessões são realmente por vídeo, com a mesma qualidade de um atendimento presencial?", "Sim. As sessões acontecem por videochamada, num ambiente privado, com a mesma atenção e cuidado de um atendimento presencial. Você só precisa de um lugar tranquilo e conexão com a internet."],
+  ["Quanto tempo dura cada sessão?", "Cada sessão tem aproximadamente 60 minutos, tempo suficiente para você se expressar com calma, sem pressa pra encerrar."],
+  ["Como funciona a TRG, a abordagem que você utiliza?", "A TRG (Terapia de Reprocessamento Generativo) é minha principal abordagem. Ela não segue fórmulas prontas, cada sessão é conduzida respeitando o tempo e a história de quem está ali, sem julgamentos."],
+  ["Como faço pra agendar minha primeira sessão?", "É simples: chama no WhatsApp, a gente conversa rapidinho sobre o que você está buscando e já encontramos juntos o melhor horário pra você começar."],
+  ["Quanto custa o atendimento?", "A sessão individual é R$ 200. Se você já sabe que quer se dedicar a um processo mais contínuo, o Programa Reequilíbrio Emocional (8 sessões) sai por R$ 1.360. Qualquer dúvida, é só chamar no WhatsApp."],
 ];
 
 function SectionHeading({ eyebrow, title, description, centered = false }: { eyebrow?: string; title: string; description?: string; centered?: boolean }) {
@@ -99,7 +99,7 @@ function HomePage() {
         <div className="hero-content">
           <span className="hero-tag"><span className="live-dot" /> Atendimento 100% on-line</span>
           <h1>Ansiedade, estresse ou a sensação de que os pensamentos não param?</h1>
-          <p>Você não precisa continuar carregando isso sozinho. Meu espaço de escuta e cuidado.</p>
+          <p>Você não precisa continuar carregando isso sozinho. Se a sensação de sobrecarga, medo ou insegurança tem tomado mais espaço do que você gostaria, saiba que existe um caminho para respirar com mais leveza. Aqui você encontra um espaço de escuta verdadeira, sem pressa e sem julgamento, para colocar em palavras o que sente e começar, no seu tempo, a cuidar de você.</p>
           <WhatsAppLink variant="light" arrow className="hero-cta" message="Olá, Claudir! Gostaria de conversar sobre o atendimento on-line.">Falar agora no WhatsApp</WhatsAppLink>
           <div className="hero-trust" aria-label="Informações sobre o atendimento">
             <span><Clock3 size={16} /> Atuação desde 2007</span><span><Brain size={16} /> TRG como abordagem principal</span><span><BadgeCheck size={16} /> Registro ABRAPH 07853AB</span>
