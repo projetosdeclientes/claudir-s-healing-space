@@ -12,9 +12,9 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Claudir J. Corrêa — Terapeuta Integrativo | Atendimento on-line" },
-      { name: "description", content: "Claudir J. Corrêa é terapeuta integrativo com atuação desde 2007. Atendimento individual 100% on-line com TRG como abordagem principal. Conheça os serviços e converse pelo WhatsApp." },
+      { name: "description", content: "Sou terapeuta integrativo com atuação desde 2007. Atendimento individual 100% on-line com TRG como abordagem principal. Conheça meus serviços e converse pelo WhatsApp." },
       { property: "og:title", content: "Claudir J. Corrêa — Terapeuta Integrativo" },
-      { property: "og:description", content: "Um espaço de escuta e cuidado, no seu tempo. Atendimento individual 100% on-line com Claudir J. Corrêa." },
+      { property: "og:description", content: "Meu espaço de escuta e cuidado, no seu tempo. Atendimento individual 100% on-line." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -99,7 +99,7 @@ function HomePage() {
         <div className="hero-content">
           <span className="hero-tag"><span className="live-dot" /> Atendimento 100% on-line</span>
           <h1>Ansiedade, estresse ou a sensação de que os pensamentos não param?</h1>
-          <p>Você não precisa continuar carregando isso sozinho. Um espaço de escuta e cuidado com Claudir J. Corrêa, Terapeuta Integrativo.</p>
+          <p>Você não precisa continuar carregando isso sozinho. Meu espaço de escuta e cuidado.</p>
           <WhatsAppLink variant="light" arrow className="hero-cta" message="Olá, Claudir! Gostaria de conversar sobre o atendimento on-line.">Falar agora no WhatsApp</WhatsAppLink>
           <div className="hero-trust" aria-label="Informações sobre o atendimento">
             <span><Clock3 size={16} /> Atuação desde 2007</span><span><Brain size={16} /> TRG como abordagem principal</span><span><BadgeCheck size={16} /> Registro ABRAPH 07853AB</span>
