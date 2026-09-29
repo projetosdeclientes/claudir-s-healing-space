@@ -101,6 +101,9 @@
   --soft-mint: oklch(0.935 0.026 159);
   --sage: oklch(0.55 0.042 168);
   --gold: oklch(0.74 0.088 83);
+  --wa-green: #25d366;
+  --wa-green-dark: #128c7e;
+  --wa-green-deep: #075e54;
 }
 
 .dark {
@@ -162,14 +165,16 @@ body { min-width: 320px; }
 .section-heading p { font-size: 1.06rem; line-height: 1.85; color: var(--muted-foreground); margin: 0; }
 .eyebrow { display: inline-flex; align-items: center; gap: 11px; text-transform: uppercase; font-weight: 800; letter-spacing: .16em; font-size: .69rem; color: var(--sage); }
 .eyebrow-line { width: 24px; height: 1px; background: currentColor; }
-.whatsapp-button { height: 50px; padding: 0 23px; border-radius: 4px; font-weight: 700; font-size: .9rem; box-shadow: none; transition: transform .2s, background .2s, box-shadow .2s; }
-.whatsapp-button:hover { transform: translateY(-2px); box-shadow: 0 10px 22px color-mix(in oklab, var(--deep-blue) 16%, transparent); }
-.whatsapp-button--solid { background: var(--primary); color: var(--primary-foreground); }
-.whatsapp-button--solid:hover { background: var(--deep-blue); }
-.whatsapp-button--light { background: var(--background); color: var(--primary); }
-.whatsapp-button--light:hover { background: var(--soft-mint); }
-.whatsapp-button--outline { border: 1px solid var(--primary); color: var(--primary); background: transparent; }
-.whatsapp-button--outline:hover { background: var(--soft-mint); }
+.whatsapp-button { height: 50px; padding: 0 23px; border-radius: 4px; font-weight: 700; font-size: .9rem; box-shadow: none; transition: transform .2s, background .2s, box-shadow .2s; position: relative; overflow: hidden; }
+.whatsapp-button:hover { transform: translateY(-2px); box-shadow: 0 10px 22px color-mix(in oklab, var(--wa-green) 30%, transparent); }
+.whatsapp-button--solid { background: var(--wa-green); color: white; }
+.whatsapp-button--solid:hover { background: var(--wa-green-dark); }
+.whatsapp-button--light { background: color-mix(in oklab, var(--wa-green) 12%, transparent); color: var(--wa-green-deep); border: 1px solid color-mix(in oklab, var(--wa-green) 30%, transparent); }
+.whatsapp-button--light:hover { background: var(--wa-green); color: white; }
+.whatsapp-button--outline { border: 1px solid var(--wa-green); color: var(--wa-green); background: transparent; }
+.whatsapp-button--outline:hover { background: var(--wa-green); color: white; }
+.whatsapp-button::after { content: ""; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 40%, rgba(255,255,255,.18) 50%, transparent 60%); transform: translateX(-100%); transition: transform .45s ease; pointer-events: none; }
+.whatsapp-button:hover::after { transform: translateX(100%); }
 
 .floating-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: color-mix(in oklab, var(--background) 94%, transparent); backdrop-filter: blur(16px); border-bottom: 1px solid color-mix(in oklab, var(--border) 70%, transparent); box-shadow: 0 8px 26px color-mix(in oklab, var(--deep-blue) 7%, transparent); transform: translateY(-110%); opacity: 0; pointer-events: none; transition: transform .4s ease, opacity .4s ease; }
 .floating-nav--visible { transform: translateY(0); opacity: 1; pointer-events: auto; }
@@ -270,8 +275,13 @@ body { min-width: 320px; }
 .play-circle { width: 68px; height: 68px; border: 1px solid var(--sage); border-radius: 50%; display: grid; place-items: center; }.play-circle svg { margin-left: 3px; }
 
 .services-section { background: var(--background); }.service-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 990px; margin: 45px auto 0; gap: 18px; }
-.service-card { background: var(--card); border: 1px solid var(--border); padding: 38px; border-radius: 5px; display: flex; flex-direction: column; min-height: 455px; box-shadow: 0 12px 28px color-mix(in oklab, var(--deep-blue) 4%, transparent); }
-.service-card--featured { color: var(--primary-foreground); background: var(--primary); border-color: var(--primary); position: relative; overflow: hidden; }.service-card--featured:before { content: ""; position: absolute; width: 260px; height: 260px; border: 1px solid color-mix(in oklab, var(--primary-foreground) 14%, transparent); border-radius: 50%; right: -90px; top: -125px; pointer-events: none; }
+.service-card { background: var(--card); border: 1px solid var(--border); padding: 38px; border-radius: 5px; display: flex; flex-direction: column; min-height: 455px; box-shadow: 0 12px 28px color-mix(in oklab, var(--deep-blue) 4%, transparent); transition: transform .25s, box-shadow .25s, border-color .25s; }
+.service-card:hover { transform: translateY(-5px); box-shadow: 0 18px 35px color-mix(in oklab, var(--deep-blue) 10%, transparent); }
+.service-card--border { border: 2px solid var(--primary); }
+.service-card--border:hover { border-color: var(--deep-blue); }
+.service-card--featured { color: var(--primary-foreground); background: var(--primary); border-color: var(--primary); position: relative; overflow: hidden; transition: transform .25s, box-shadow .25s; }
+.service-card--featured:before { content: ""; position: absolute; width: 260px; height: 260px; border: 1px solid color-mix(in oklab, var(--primary-foreground) 14%, transparent); border-radius: 50%; right: -90px; top: -125px; pointer-events: none; }
+.service-card--featured:hover { transform: translateY(-5px); box-shadow: 0 18px 35px color-mix(in oklab, var(--primary) 25%, transparent); }
 .service-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; position: relative; }.service-icon { width: 52px; height: 52px; background: var(--soft-mint); color: var(--primary); display: grid; place-items: center; border-radius: 4px; }.service-card--featured .service-icon { background: color-mix(in oklab, var(--primary-foreground) 13%, transparent); color: var(--primary-foreground); }
 .service-index { font-size: .67rem; font-weight: 800; letter-spacing: .13em; color: var(--sage); }.service-highlight { background: var(--soft-mint); color: var(--primary); padding: 8px 10px; font-weight: 800; font-size: .67rem; border-radius: 3px; }
 .service-card h3 { font: 800 1.5rem/1.3 var(--font-display); margin: 27px 0 4px; max-width: 370px; }.service-subtitle { color: var(--muted-foreground); font-size: .87rem; margin: 0 0 19px; }.service-card--featured .service-subtitle { color: color-mix(in oklab, var(--primary-foreground) 70%, transparent); }
@@ -301,3 +311,63 @@ body { min-width: 320px; }
 }
 @media (max-width: 380px) { .hero { min-height: 830px; }.hero h1 { font-size: 2.17rem; }.hero-trust { display: grid; }.whatsapp-button { font-size: .82rem; padding-inline: 15px; }.nav-brand strong { font-size: .75rem; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *:before, *:after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+
+@keyframes aurora-drift { 0%, 100% { transform: translate3d(-50%, -50%, 0) rotate(0deg) scale(1); } 25% { transform: translate3d(-55%, -45%, 0) rotate(3deg) scale(1.02); } 50% { transform: translate3d(-45%, -55%, 0) rotate(-2deg) scale(0.98); } 75% { transform: translate3d(-52%, -52%, 0) rotate(1deg) scale(1.01); } }
+@keyframes mint-pan { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+@keyframes final-shimmer { 0%, 100% { opacity: .25; transform: translate3d(-50%, -50%, 0) scale(1); } 50% { opacity: .55; transform: translate3d(-50%, -50%, 0) scale(1.05); } }
+@keyframes ring-ccw { 0% { transform: rotate(0deg); } 100% { transform: rotate(-360deg); } }
+@keyframes ring-cw { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes core-pulse { 0%, 100% { transform: scale(1); opacity: .6; } 50% { transform: scale(1.08); opacity: .9; } }
+@keyframes icon-float { 0%, 100% { transform: translate3d(0, 0, 0); } 50% { transform: translate3d(0, -8px, 0); } }
+@keyframes steps-flow { 0% { background-position: 0% 50%; } 100% { background-position: 200% 50%; } }
+@keyframes fade-in-up { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+
+.hero::before { content: ""; position: absolute; inset: -20%; z-index: 0; background: radial-gradient(ellipse 80% 60% at 50% 50%, color-mix(in oklab, var(--gold) 18%, transparent) 0%, transparent 70%), radial-gradient(ellipse 60% 80% at 30% 70%, color-mix(in oklab, var(--primary) 12%, transparent) 0%, transparent 60%), radial-gradient(ellipse 70% 50% at 70% 30%, color-mix(in oklab, var(--sage) 10%, transparent) 0%, transparent 65%); filter: blur(64px); animation: aurora-drift 30s ease-in-out infinite; pointer-events: none; }
+
+.change-section::before, .change-section::after, .video-section::before, .video-section::after, .testimonials-section::before, .testimonials-section::after { content: ""; position: absolute; width: 320px; height: 320px; border-radius: 50%; filter: blur(48px); opacity: .35; pointer-events: none; z-index: 0; }
+.change-section::before { background: var(--sage); top: -160px; left: -160px; animation: mint-pan 40s ease-in-out infinite; }
+.change-section::after { background: var(--primary); bottom: -160px; right: -160px; animation: mint-pan 40s ease-in-out infinite reverse; }
+.video-section::before { background: var(--sage); top: -160px; right: -160px; animation: mint-pan 45s ease-in-out infinite; }
+.video-section::after { background: var(--primary); bottom: -160px; left: -160px; animation: mint-pan 45s ease-in-out infinite reverse; }
+.testimonials-section::before { background: var(--gold); top: -200px; left: 10%; animation: final-shimmer 20s ease-in-out infinite; }
+.testimonials-section::after { background: var(--primary); bottom: -200px; right: 10%; animation: final-shimmer 20s ease-in-out infinite reverse; }
+
+.reveal { opacity: 0; }
+.reveal--visible { animation: fade-in-up .7s ease forwards; }
+.reveal-delay-1 { transition-delay: 60ms; }
+.reveal-delay-2 { transition-delay: 120ms; }
+.reveal-delay-3 { transition-delay: 180ms; }
+.reveal-delay-4 { transition-delay: 240ms; }
+.reveal-delay-5 { transition-delay: 300ms; }
+.reveal-delay-6 { transition-delay: 360ms; }
+.reveal-delay-7 { transition-delay: 420ms; }
+
+.pain-card, .service-card, .step, .faq-item, .testimonial-placeholder { transition: transform .25s ease, box-shadow .25s ease; }
+.pain-card:hover, .service-card:hover { transform: translateY(-7px); box-shadow: 0 24px 40px color-mix(in oklab, var(--deep-blue) 14%, transparent); }
+.service-card--border:hover { box-shadow: 0 24px 40px color-mix(in oklab, var(--primary) 18%, transparent); }
+.service-card--featured:hover { box-shadow: 0 24px 40px color-mix(in oklab, var(--primary) 25%, transparent); }
+
+.icon-box, .step-icon, .pain-arrow, .service-icon { transition: transform .3s ease; }
+.pain-card:hover .icon-box, .step:hover .step-icon, .service-card:hover .service-icon { transform: scale(1.08); }
+
+.check-list li { position: relative; padding-left: 4px; }
+.check-list li::before { content: ""; position: absolute; left: -4px; top: 4px; width: 0; height: 2px; background: var(--sage); transition: width .3s ease; }
+.check-list li:hover::before { width: 18px; }
+
+.faq-trigger { transition: color .2s ease, background .2s ease; }
+.faq-trigger:hover { color: var(--sage); background: var(--soft-mint); border-radius: 4px; }
+.faq-trigger svg { transition: transform .3s ease; }
+.faq-item[data-state="open"] .faq-trigger svg { transform: rotate(180deg); }
+
+.final-mark { transition: transform .4s ease; }
+.final-inner:hover .final-mark { transform: rotate(90deg); }
+
+.help-art-ring-one { animation: ring-ccw 60s linear infinite; }
+.help-art-ring-two { animation: ring-cw 45s linear infinite; }
+.help-art-center { animation: core-pulse 5s ease-in-out infinite; }
+.help-art-small-one, .help-art-small-two { animation: icon-float 4s ease-in-out infinite; }
+.help-art-small-two { animation-delay: 2s; }
+
+.steps-line { background: linear-gradient(90deg, var(--border), var(--primary), var(--sage), var(--gold), var(--border)); background-size: 200% 100%; animation: steps-flow 12s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) { .hero::before, .change-section::before, .change-section::after, .video-section::before, .video-section::after, .testimonials-section::before, .testimonials-section::after, .help-art-ring-one, .help-art-ring-two, .help-art-center, .help-art-small-one, .help-art-small-two, .steps-line { animation: none !important; } .reveal { opacity: 1 !important; } }
