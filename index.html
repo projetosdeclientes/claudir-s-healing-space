@@ -1,0 +1,1310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Claudir J. Corrêa — Terapeuta Integrativo | Atendimento on-line</title>
+<meta name="description" content="Claudir J. Corrêa é terapeuta integrativo com atuação desde 2007. Atendimento individual 100% on-line com TRG como abordagem principal. Conheça os serviços e converse pelo WhatsApp." />
+<meta name="author" content="Claudir J. Corrêa" />
+<meta property="og:title" content="Claudir J. Corrêa — Terapeuta Integrativo" />
+<meta property="og:description" content="Um espaço de escuta e cuidado, no seu tempo. Atendimento individual 100% on-line com Claudir J. Corrêa." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" />
+<style>
+/* =============================================================================
+   claudir-s-healing-space-main
+   Tailwind v4 preflight + @theme inline + @layer base + CSS autoral (verbatim)
+   ============================================================================= */
+@layer base {
+/*
+  1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+  2. Remove default margins and padding
+  3. Reset all borders.
+*/
+
+*,
+::after,
+::before,
+::backdrop,
+::file-selector-button {
+  box-sizing: border-box; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 2 */
+  border: 0 solid; /* 3 */
+}
+
+/*
+  1. Use a consistent sensible line-height in all browsers.
+  2. Prevent adjustments of font size after orientation changes in iOS.
+  3. Use a more readable tab size.
+  4. Use the user's configured `sans` font-family by default.
+  5. Use the user's configured `sans` font-feature-settings by default.
+  6. Use the user's configured `sans` font-variation-settings by default.
+  7. Disable tap highlights on iOS.
+*/
+
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  tab-size: 4; /* 3 */
+  font-family: --theme(
+    --default-font-family,
+    ui-sans-serif,
+    system-ui,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji'
+  ); /* 4 */
+  font-feature-settings: --theme(--default-font-feature-settings, normal); /* 5 */
+  font-variation-settings: --theme(--default-font-variation-settings, normal); /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+  1. Add the correct height in Firefox.
+  2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+  3. Reset the default border style to a 1px solid border.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+  Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+/*
+  Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+  Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  -webkit-text-decoration: inherit;
+  text-decoration: inherit;
+}
+
+/*
+  Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+  1. Use the user's configured `mono` font-family by default.
+  2. Use the user's configured `mono` font-feature-settings by default.
+  3. Use the user's configured `mono` font-variation-settings by default.
+  4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: --theme(
+    --default-mono-font-family,
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Liberation Mono',
+    'Courier New',
+    monospace
+  ); /* 1 */
+  font-feature-settings: --theme(--default-mono-font-feature-settings, normal); /* 2 */
+  font-variation-settings: --theme(--default-mono-font-variation-settings, normal); /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+  Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+  Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+  1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+  2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+  3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+  Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+  Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+  Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+  Make lists unstyled by default.
+*/
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/*
+  1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+  2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+      This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+  Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+  1. Inherit font styles in all browsers.
+  2. Remove border radius in all browsers.
+  3. Remove background color in all browsers.
+  4. Ensure consistent opacity for disabled states in all browsers.
+*/
+
+button,
+input,
+select,
+optgroup,
+textarea,
+::file-selector-button {
+  font: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  border-radius: 0; /* 2 */
+  background-color: transparent; /* 3 */
+  opacity: 1; /* 4 */
+}
+
+/*
+  Restore default font weight.
+*/
+
+:where(select:is([multiple], [size])) optgroup {
+  font-weight: bolder;
+}
+
+/*
+  Restore indentation.
+*/
+
+:where(select:is([multiple], [size])) optgroup option {
+  padding-inline-start: 20px;
+}
+
+/*
+  Restore space after button.
+*/
+
+::file-selector-button {
+  margin-inline-end: 4px;
+}
+
+/*
+  Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+*/
+
+::placeholder {
+  opacity: 1;
+}
+
+/*
+  Set the default placeholder color to a semi-transparent version of the current text color in browsers that do not
+  crash when using `color-mix(…)` with `currentcolor`. (https://github.com/tailwindlabs/tailwindcss/issues/17194)
+*/
+
+@supports (not (-webkit-appearance: -apple-pay-button)) /* Not Safari */ or
+  (contain-intrinsic-size: 1px) /* Safari 17+ */ {
+  ::placeholder {
+    color: color-mix(in oklab, currentcolor 50%, transparent);
+  }
+}
+
+/*
+  Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+  Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+  1. Ensure date/time inputs have the same height when empty in iOS Safari.
+  2. Ensure text alignment can be changed on date/time inputs in iOS Safari.
+*/
+
+::-webkit-date-and-time-value {
+  min-height: 1lh; /* 1 */
+  text-align: inherit; /* 2 */
+}
+
+/*
+  Prevent height from changing on date/time inputs in macOS Safari when the input is set to `display: block`.
+*/
+
+::-webkit-datetime-edit {
+  display: inline-flex;
+}
+
+/*
+  Remove excess padding from pseudo-elements in date/time inputs to ensure consistent height across browsers.
+*/
+
+::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+::-webkit-datetime-edit,
+::-webkit-datetime-edit-year-field,
+::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-hour-field,
+::-webkit-datetime-edit-minute-field,
+::-webkit-datetime-edit-second-field,
+::-webkit-datetime-edit-millisecond-field,
+::-webkit-datetime-edit-meridiem-field {
+  padding-block: 0;
+}
+
+/*
+  Center dropdown marker shown on inputs with paired `<datalist>`s in Chrome. (https://github.com/tailwindlabs/tailwindcss/issues/18499)
+*/
+
+::-webkit-calendar-picker-indicator {
+  line-height: 1;
+}
+
+/*
+  Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+  Correct the inability to style the border radius in iOS Safari.
+*/
+
+button,
+input:where([type='button'], [type='reset'], [type='submit']),
+::file-selector-button {
+  appearance: button;
+}
+
+/*
+  Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+  Make elements with the HTML hidden attribute stay hidden by default.
+*/
+
+[hidden]:where(:not([hidden='until-found'])) {
+  display: none !important;
+}
+
+
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+}
+@layer utilities {
+/* --- shadcn/ui button.tsx (Button asChild -> <a>) --- */
+.whatsapp-button { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; white-space:nowrap;
+  border-radius:calc(var(--radius) - 2px); font-size:.875rem; font-weight:500; cursor:pointer;
+  height:2.25rem; padding:.5rem 1rem; background-color:var(--color-primary); color:var(--color-primary-foreground);
+  box-shadow:0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);
+  transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function:var(--default-transition-timing-function); transition-duration:var(--default-transition-duration); }
+.whatsapp-button:hover { background-color:color-mix(in oklab, var(--color-primary) 90%, transparent); }
+.whatsapp-button:focus-visible { outline:none; box-shadow:0 0 0 1px var(--color-ring); }
+.whatsapp-button:disabled { pointer-events:none; opacity:.5; cursor:not-allowed; }
+.whatsapp-button svg { pointer-events:none; width:1rem; height:1rem; flex-shrink:0; }
+
+/* --- shadcn/ui accordion.tsx --- */
+.border-b { border-bottom-width:1px; }
+.flex { display:flex; }
+.flex-1 { flex:1 1 0%; }
+.items-center { align-items:center; }
+.justify-between { justify-content:space-between; }
+.py-4 { padding-top:1rem; padding-bottom:1rem; }
+.text-sm { font-size:.875rem; line-height:calc(1.25 / .875); }
+.font-medium { font-weight:500; }
+.cursor-pointer { cursor:pointer; }
+.text-left { text-align:left; }
+.transition-all { transition-property:all; transition-timing-function:var(--default-transition-timing-function); transition-duration:var(--default-transition-duration); }
+.transition-transform { transition-property:transform, translate, scale, rotate; transition-timing-function:var(--default-transition-timing-function); transition-duration:var(--default-transition-duration); }
+.duration-200 { transition-duration:200ms; }
+.text-muted-foreground { color:var(--color-muted-foreground); }
+.h-4 { height:1rem; }
+.w-4 { width:1rem; }
+.shrink-0 { flex-shrink:0; }
+.pb-4 { padding-bottom:1rem; }
+.pt-0 { padding-top:0; }
+.faq-item { border-bottom:1px solid var(--color-border); }
+.faq-content { overflow:hidden; font-size:.875rem; line-height:calc(1.25 / .875); }
+.faq-content[data-state="open"] { animation:var(--animate-accordion-down); }
+.faq-content[data-state="closed"] { animation:var(--animate-accordion-up); }
+.faq-trigger[data-state="open"] > svg { rotate:180deg; }
+.faq-chevron { width:1rem; height:1rem; flex-shrink:0; color:var(--color-muted-foreground);
+  transition-property:transform, translate, scale, rotate;
+  transition-timing-function:var(--default-transition-timing-function); transition-duration:var(--default-transition-duration); }
+}
+:root {
+  --default-transition-duration: 150ms;
+  --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  --animate-accordion-down: accordion-down var(--tw-animation-duration, var(--tw-duration, .2s)) ease-out;
+  --animate-accordion-up: accordion-up var(--tw-animation-duration, var(--tw-duration, .2s)) ease-out;
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Manrope", sans-serif;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+:root {
+  --radius: 0.375rem;
+  --background: oklch(0.97 0.014 91);
+  --foreground: oklch(0.31 0.053 236);
+  --card: oklch(0.995 0.005 88);
+  --card-foreground: oklch(0.31 0.053 236);
+  --popover: oklch(0.995 0.005 88);
+  --popover-foreground: oklch(0.31 0.053 236);
+  --primary: oklch(0.38 0.067 235);
+  --primary-foreground: oklch(0.99 0.004 91);
+  --secondary: oklch(0.91 0.026 159);
+  --secondary-foreground: oklch(0.38 0.067 235);
+  --muted: oklch(0.94 0.016 170);
+  --muted-foreground: oklch(0.49 0.025 206);
+  --accent: oklch(0.55 0.042 168);
+  --accent-foreground: oklch(0.99 0.004 91);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(0.85 0.018 179);
+  --input: oklch(0.85 0.018 179);
+  --ring: oklch(0.55 0.042 168);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.984 0.003 247.858);
+  --sidebar-foreground: oklch(0.129 0.042 264.695);
+  --sidebar-primary: oklch(0.208 0.042 265.755);
+  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-accent: oklch(0.968 0.007 247.896);
+  --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
+  --sidebar-border: oklch(0.929 0.013 255.508);
+  --sidebar-ring: oklch(0.704 0.04 256.788);
+  --deep-blue: oklch(0.27 0.052 236);
+  --soft-mint: oklch(0.935 0.026 159);
+  --sage: oklch(0.55 0.042 168);
+  --gold: oklch(0.74 0.088 83);
+  /* WhatsApp Brand Palette (oficial) */
+  --wa-green: #25d366;
+  --wa-green-dark: #1eb455;
+  --wa-green-deep: #075e54;
+}
+.dark {
+  --background: oklch(0.129 0.042 264.695);
+  --foreground: oklch(0.984 0.003 247.858);
+  --card: oklch(0.208 0.042 265.755);
+  --card-foreground: oklch(0.984 0.003 247.858);
+  --popover: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.984 0.003 247.858);
+  --primary: oklch(0.929 0.013 255.508);
+  --primary-foreground: oklch(0.208 0.042 265.755);
+  --secondary: oklch(0.279 0.041 260.031);
+  --secondary-foreground: oklch(0.984 0.003 247.858);
+  --muted: oklch(0.279 0.041 260.031);
+  --muted-foreground: oklch(0.704 0.04 256.788);
+  --accent: oklch(0.279 0.041 260.031);
+  --accent-foreground: oklch(0.984 0.003 247.858);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.551 0.027 264.364);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.208 0.042 265.755);
+  --sidebar-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-accent: oklch(0.279 0.041 260.031);
+  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.551 0.027 264.364);
+}
+@keyframes accordion-down { from { height: 0; } to { height: var(--radix-accordion-content-height, var(--bits-accordion-content-height, var(--reka-accordion-content-height, var(--kb-accordion-content-height, auto)))); } }
+@keyframes accordion-up { from { height: var(--radix-accordion-content-height, var(--bits-accordion-content-height, var(--reka-accordion-content-height, var(--kb-accordion-content-height, auto)))); } to { height: 0; } }
+html { scroll-behavior: smooth; }
+body { min-width: 320px; }
+* { box-sizing: border-box; }
+::selection { background: var(--soft-mint); color: var(--deep-blue); }
+.container { width: min(100% - 48px, 1160px); margin-inline: auto; }
+.section { padding: 112px 0; }
+.section-heading { max-width: 690px; }
+.section-heading--center { text-align: center; margin-inline: auto; }
+.section-heading h2 { font: 800 clamp(2rem, 3.35vw, 3.15rem)/1.18 var(--font-display); margin: 20px 0 18px; letter-spacing: 0; }
+.section-heading p { font-size: 1.06rem; line-height: 1.85; color: var(--muted-foreground); margin: 0; }
+.eyebrow { display: inline-flex; align-items: center; gap: 11px; text-transform: uppercase; font-weight: 800; letter-spacing: .16em; font-size: .69rem; color: var(--sage); }
+.eyebrow-line { width: 24px; height: 1px; background: currentColor; }
+.whatsapp-button { height: 50px; padding: 0 23px; border-radius: 4px; font-weight: 700; font-size: .9rem; box-shadow: none; position: relative; overflow: hidden; isolation: isolate; transition: transform .28s cubic-bezier(.22,1,.36,1), background-color .25s, border-color .25s, box-shadow .28s; }
+.whatsapp-button::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(105deg, transparent 34%, rgba(255,255,255,.5) 50%, transparent 66%); transform: translateX(-135%); transition: transform .8s cubic-bezier(.22,1,.36,1); }
+.whatsapp-button:hover { transform: translateY(-3px); box-shadow: 0 14px 30px color-mix(in srgb, var(--wa-green) 36%, transparent); }
+.whatsapp-button:hover::after { transform: translateX(135%); }
+.whatsapp-button:active { transform: translateY(-1px); }
+.whatsapp-button svg { transition: transform .28s cubic-bezier(.22,1,.36,1); }
+.whatsapp-button:hover svg { transform: scale(1.12); }
+/* todos os CTAs de WhatsApp usam o verde oficial do app */
+.whatsapp-button--solid, .whatsapp-button--light, .whatsapp-button--outline { background: var(--wa-green); color: #fff; border: 1px solid var(--wa-green); }
+.whatsapp-button--solid:hover, .whatsapp-button--light:hover, .whatsapp-button--outline:hover { background: var(--wa-green-dark); border-color: var(--wa-green-dark); }
+
+.floating-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: color-mix(in oklab, var(--background) 94%, transparent); backdrop-filter: blur(16px); border-bottom: 1px solid color-mix(in oklab, var(--border) 70%, transparent); box-shadow: 0 8px 26px color-mix(in oklab, var(--deep-blue) 7%, transparent); transform: translateY(-110%); opacity: 0; pointer-events: none; transition: transform .4s ease, opacity .4s ease; }
+.floating-nav--visible { transform: translateY(0); opacity: 1; pointer-events: auto; }
+.nav-inner { height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.nav-brand { display: inline-flex; align-items: center; gap: 12px; color: var(--foreground); text-decoration: none; min-width: 0; }
+.nav-brand img { object-fit: contain; width: 51px; height: 45px; flex: none; }
+.nav-brand span, .footer-inner > span { display: grid; gap: 1px; }
+.nav-brand strong { font: 800 .97rem var(--font-display); }
+.nav-brand small { color: var(--muted-foreground); font-size: .69rem; }
+.nav-cta { height: 40px; }
+
+.hero { min-height: min(790px, 94svh); min-height: clamp(690px, 94svh, 840px); position: relative; overflow: hidden; color: var(--primary-foreground); background: var(--deep-blue); }
+.hero-image, .hero-shade { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero-image { object-fit: cover; object-position: center 45%; }
+.hero-shade { background: linear-gradient(90deg, color-mix(in oklab, var(--deep-blue) 96%, transparent) 0%, color-mix(in oklab, var(--deep-blue) 84%, transparent) 42%, color-mix(in oklab, var(--deep-blue) 32%, transparent) 100%), linear-gradient(0deg, color-mix(in oklab, var(--deep-blue) 72%, transparent), transparent 40%); }
+.hero-inner { position: relative; z-index: 1; min-height: inherit; display: flex; flex-direction: column; }
+.hero-top { display: flex; align-items: center; justify-content: space-between; padding-top: 32px; color: color-mix(in oklab, var(--primary-foreground) 76%, transparent); }
+.hero-monogram { font: 800 1.25rem var(--font-display); letter-spacing: .04em; }
+.hero-monogram-dot { color: var(--gold); margin-inline: 2px; }
+.hero-top-name { font-size: .61rem; font-weight: 800; letter-spacing: .2em; }
+.hero-top-name span { margin: 0 13px; color: var(--gold); }
+.hero-content { padding-top: clamp(90px, 14vh, 155px); width: min(100%, 790px); }
+.hero-tag { display: inline-flex; align-items: center; gap: 9px; border: 1px solid color-mix(in oklab, var(--primary-foreground) 28%, transparent); background: color-mix(in oklab, var(--primary-foreground) 7%, transparent); border-radius: 100px; padding: 9px 15px; color: var(--primary-foreground); font-size: .75rem; font-weight: 700; }
+.live-dot { width: 7px; height: 7px; background: var(--gold); border-radius: 50%; box-shadow: 0 0 0 4px color-mix(in oklab, var(--gold) 20%, transparent); }
+.hero h1 { font: 800 clamp(2.65rem, 4.5vw, 4.35rem)/1.13 var(--font-display); margin: 29px 0 22px; max-width: 790px; letter-spacing: 0; }
+.hero-content > p { font-size: 1.08rem; line-height: 1.85; max-width: 630px; color: color-mix(in oklab, var(--primary-foreground) 83%, transparent); margin: 0 0 29px; }
+.hero-cta { min-height: 56px; padding-inline: 25px; }
+.hero-trust { display: flex; flex-wrap: wrap; gap: 13px 23px; margin-top: 35px; padding-top: 24px; border-top: 1px solid color-mix(in oklab, var(--primary-foreground) 20%, transparent); width: fit-content; }
+.hero-trust span { display: inline-flex; align-items: center; gap: 8px; font-size: .73rem; color: color-mix(in oklab, var(--primary-foreground) 77%, transparent); white-space: nowrap; }
+.hero-trust svg { color: var(--gold); }
+.hero-scroll { display: flex; align-items: center; gap: 14px; width: fit-content; color: color-mix(in oklab, var(--primary-foreground) 75%, transparent); text-decoration: none; font-size: .63rem; font-weight: 800; letter-spacing: .17em; margin-top: auto; padding: 32px 0; }
+.hero-scroll svg { color: var(--gold); }
+
+.pain-section { background: var(--background); }
+.pain-header { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 39px; }
+.header-ornament { display: flex; align-items: center; gap: 14px; color: var(--sage); font-size: .77rem; font-weight: 800; letter-spacing: .14em; padding-bottom: 12px; }
+.header-ornament i { width: 55px; height: 1px; background: var(--sage); }
+.pain-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; }
+.pain-card { position: relative; min-height: 235px; background: var(--card); border: 1px solid color-mix(in oklab, var(--border) 73%, transparent); padding: 26px; border-radius: 5px; box-shadow: 0 10px 32px color-mix(in oklab, var(--deep-blue) 3%, transparent); transition: transform .25s, box-shadow .25s; }
+.pain-card:hover { transform: translateY(-5px); box-shadow: 0 18px 35px color-mix(in oklab, var(--deep-blue) 10%, transparent); }
+.pain-card-top { display: flex; align-items: start; justify-content: space-between; }
+.icon-box { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 4px; color: var(--primary); background: var(--soft-mint); }
+.card-number { color: var(--border); font: 800 .8rem var(--font-display); }
+.pain-card h3 { font: 800 1.02rem var(--font-display); margin: 24px 0 8px; }
+.pain-card p { font-size: .85rem; line-height: 1.65; color: var(--muted-foreground); margin: 0; max-width: 265px; }
+.pain-arrow { position: absolute; right: 26px; bottom: 24px; color: var(--sage); }
+
+.change-section { background: var(--soft-mint); border-block: 1px solid color-mix(in oklab, var(--sage) 14%, transparent); }
+.change-inner { position: relative; text-align: center; padding: 70px 0 74px; }
+.change-symbol { width: 56px; height: 56px; border: 1px solid color-mix(in oklab, var(--sage) 40%, transparent); border-radius: 50%; display: grid; place-items: center; color: var(--sage); margin: 0 auto 23px; }
+.change-inner p { max-width: 900px; margin: 0 auto; font: 500 clamp(1.25rem, 2vw, 1.85rem)/1.65 var(--font-display); color: var(--primary); }
+.change-inner strong { font-weight: 800; }
+.change-deco { position: absolute; right: 3%; bottom: 26px; color: color-mix(in oklab, var(--sage) 35%, transparent); font-size: 2rem; }
+
+.help-section { background: var(--card); }
+.help-grid { display: grid; grid-template-columns: .86fr 1fr; align-items: center; gap: clamp(70px, 10vw, 150px); }
+.help-art { min-height: 510px; background: var(--soft-mint); position: relative; display: grid; place-items: center; overflow: hidden; }
+.help-art:before, .help-art:after { content: ""; position: absolute; width: 160px; height: 160px; border: 1px solid color-mix(in oklab, var(--sage) 20%, transparent); border-radius: 50%; }
+.help-art:before { top: -80px; left: -80px; }.help-art:after { bottom: -80px; right: -80px; }
+.help-art-inner { position: relative; width: min(80%, 365px); aspect-ratio: 1; display: grid; place-items: center; }
+.help-art-ring { position: absolute; inset: 0; border: 1px solid color-mix(in oklab, var(--sage) 42%, transparent); border-radius: 50%; }
+.help-art-ring-two { inset: 36px; border-color: color-mix(in oklab, var(--sage) 30%, transparent); }
+.help-art-center { color: var(--sage); width: 135px; height: 135px; background: color-mix(in oklab, var(--background) 85%, transparent); display: grid; place-items: center; border-radius: 50%; box-shadow: 0 15px 35px color-mix(in oklab, var(--sage) 14%, transparent); }
+.help-art-small { position: absolute; width: 49px; height: 49px; display: grid; place-items: center; border-radius: 50%; background: var(--card); color: var(--sage); box-shadow: 0 8px 24px color-mix(in oklab, var(--sage) 14%, transparent); }
+.help-art-small-one { top: 10%; right: 10%; }.help-art-small-two { bottom: 9%; left: 10%; }
+.help-art-caption { position: absolute; bottom: 29px; font-size: .61rem; font-weight: 800; letter-spacing: .19em; color: var(--sage); }
+.help-copy .section-heading h2 { max-width: 550px; }
+.check-list { list-style: none; margin: 27px 0 33px; padding: 0; display: grid; gap: 15px; }
+.check-list li { display: flex; align-items: start; gap: 12px; font-size: .9rem; font-weight: 600; }
+.check-list svg { flex: none; margin-top: 2px; color: var(--sage); }
+
+.process-section { background: var(--background); }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); position: relative; text-align: center; margin-top: 60px; }
+.steps-line { position: absolute; height: 1px; top: 36px; left: 12%; right: 12%; background: var(--border); }
+.step { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; }
+.step-icon { width: 73px; height: 73px; background: var(--card); border: 1px solid var(--border); border-radius: 50%; display: grid; place-items: center; color: var(--primary); box-shadow: 0 8px 20px color-mix(in oklab, var(--deep-blue) 5%, transparent); }
+.step-count { font-size: .67rem; color: var(--sage); letter-spacing: .13em; font-weight: 800; margin: 19px 0 8px; }
+.step h3 { font: 800 1rem var(--font-display); margin: 0 0 5px; }.step p { font-size: .85rem; color: var(--muted-foreground); margin: 0; }
+
+.about-section { background: var(--card); }
+.about-grid { display: grid; grid-template-columns: .76fr 1.1fr; gap: clamp(50px, 8vw, 115px); align-items: center; }
+.portrait-placeholder { min-height: 475px; background: linear-gradient(140deg, var(--soft-mint), var(--secondary)); position: relative; display: grid; place-items: center; border-radius: 3px; }
+.portrait-frame { width: calc(100% - 54px); height: calc(100% - 54px); position: absolute; border: 1px solid color-mix(in oklab, var(--sage) 35%, transparent); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px; color: var(--sage); }
+.portrait-frame span { text-align: center; font-weight: 800; letter-spacing: .17em; font-size: .68rem; line-height: 1.6; }
+.portrait-corner { width: 45px; height: 45px; border-right: 2px solid var(--sage); border-bottom: 2px solid var(--sage); position: absolute; right: -10px; bottom: -10px; }
+.about-copy .section-heading p { font-size: .98rem; }
+.about-divider { height: 1px; background: var(--border); margin: 26px 0 20px; }
+.mini-label { font-size: .66rem; font-weight: 800; letter-spacing: .16em; color: var(--sage); margin: 0 0 13px; }
+.formation-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.formation-pills span { border: 1px solid var(--border); padding: 7px 11px; font-size: .73rem; font-weight: 600; border-radius: 3px; color: var(--muted-foreground); }
+.formation-pills .formation-primary { color: var(--primary); background: var(--soft-mint); border-color: var(--soft-mint); font-weight: 800; }
+.credential { display: flex; align-items: center; gap: 12px; margin-top: 24px; padding: 12px 16px 12px 7px; border: 1px solid var(--border); width: fit-content; border-radius: 4px; }
+.credential img { width: 88px; height: 69px; object-fit: contain; }.credential span { display: grid; gap: 4px; }.credential strong { font-size: .83rem; }.credential small { font-size: .72rem; color: var(--muted-foreground); }.credential > svg { margin-left: 14px; color: var(--sage); }
+
+.video-section { background: var(--soft-mint); padding: 78px 0; }
+.video-layout { display: grid; grid-template-columns: .65fr 1fr; align-items: center; gap: 70px; }.video-support { color: var(--muted-foreground); font-size: .92rem; }
+.video-placeholder { aspect-ratio: 16/9; border: 1.5px dashed color-mix(in oklab, var(--sage) 55%, transparent); background: color-mix(in oklab, var(--card) 45%, transparent); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 17px; color: var(--sage); font-size: .85rem; font-weight: 600; border-radius: 5px; }
+.play-circle { width: 68px; height: 68px; border: 1px solid var(--sage); border-radius: 50%; display: grid; place-items: center; }.play-circle svg { margin-left: 3px; }
+
+.services-section { background: var(--background); }.service-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 990px; margin: 45px auto 0; gap: 18px; }
+.service-card { background: var(--card); border: 1px solid var(--border); padding: 38px; border-radius: 5px; display: flex; flex-direction: column; min-height: 455px; box-shadow: 0 12px 28px color-mix(in oklab, var(--deep-blue) 4%, transparent); }
+/* card "Terapia Online": borda no mesmo azul do card Reequilibrio Emocional */
+.service-card--blue { border: 2px solid var(--primary); box-shadow: 0 12px 30px color-mix(in oklab, var(--primary) 12%, transparent); }
+.service-card--blue:hover { border-color: color-mix(in oklab, var(--primary) 78%, var(--sage)); }
+.service-icon--wa { color: var(--wa-green-dark); background: color-mix(in srgb, var(--wa-green) 14%, var(--card)); border-color: color-mix(in srgb, var(--wa-green) 32%, transparent); }
+.service-card--featured { color: var(--primary-foreground); background: var(--primary); border-color: var(--primary); position: relative; overflow: hidden; }.service-card--featured:before { content: ""; position: absolute; width: 260px; height: 260px; border: 1px solid color-mix(in oklab, var(--primary-foreground) 14%, transparent); border-radius: 50%; right: -90px; top: -125px; pointer-events: none; }
+.service-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; position: relative; }.service-icon { width: 52px; height: 52px; background: var(--soft-mint); color: var(--primary); display: grid; place-items: center; border-radius: 4px; }.service-card--featured .service-icon { background: color-mix(in oklab, var(--primary-foreground) 13%, transparent); color: var(--primary-foreground); }
+.service-index { font-size: .67rem; font-weight: 800; letter-spacing: .13em; color: var(--sage); }.service-highlight { background: var(--soft-mint); color: var(--primary); padding: 8px 10px; font-weight: 800; font-size: .67rem; border-radius: 3px; }
+.service-card h3 { font: 800 1.5rem/1.3 var(--font-display); margin: 27px 0 4px; max-width: 370px; }.service-subtitle { color: var(--muted-foreground); font-size: .87rem; margin: 0 0 19px; }.service-card--featured .service-subtitle { color: color-mix(in oklab, var(--primary-foreground) 70%, transparent); }
+.price { font: 800 2.35rem var(--font-display); }.service-line { height: 1px; background: var(--border); margin: 20px 0; }.service-card--featured .service-line { background: color-mix(in oklab, var(--primary-foreground) 22%, transparent); }
+.service-card ul { list-style: none; padding: 0; margin: 0 0 27px; display: grid; gap: 12px; }.service-card li { display: flex; gap: 10px; align-items: center; font-size: .85rem; }.service-card li svg { color: var(--sage); flex: none; }.service-card--featured li svg { color: var(--soft-mint); }.service-card .whatsapp-button { width: 100%; margin-top: auto; }
+
+.testimonials-section { background: var(--soft-mint); overflow: hidden; padding-bottom: 105px; }.testimonial-header { display: flex; justify-content: space-between; gap: 30px; align-items: end; margin-bottom: 35px; }.testimonial-note { display: inline-flex; align-items: center; gap: 8px; color: var(--sage); font-weight: 700; font-size: .8rem; padding-bottom: 12px; white-space: nowrap; }
+.testimonial-viewport { width: 100%; overflow: hidden; cursor: grab; touch-action: pan-y; user-select: none; }.testimonial-viewport:active { cursor: grabbing; }.testimonial-track { display: flex; width: max-content; will-change: transform; }.testimonial-group { display: flex; gap: 16px; padding-right: 16px; flex: none; }.testimonial-placeholder { height: 340px; width: 275px; flex: none; background: var(--card); box-shadow: 0 12px 25px color-mix(in oklab, var(--deep-blue) 7%, transparent); border: 1px solid var(--border); border-radius: 6px; color: var(--sage); display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 17px; }.testimonial-placeholder-2 { width: 320px; }.testimonial-placeholder-3 { width: 285px; }.testimonial-placeholder-4 { width: 345px; }.testimonial-placeholder-5 { width: 300px; }.testimonial-stars { display: flex; gap: 4px; color: var(--gold); }.testimonial-placeholder span { color: var(--muted-foreground); font-size: .82rem; font-weight: 600; }.testimonial-placeholder small { font-size: .61rem; font-weight: 800; letter-spacing: .16em; color: var(--sage); margin-top: 30px; }
+
+.faq-section { background: var(--card); }.faq-grid { display: grid; grid-template-columns: .7fr 1fr; gap: 100px; }.faq-aside-icon { width: 72px; height: 72px; border-radius: 50%; border: 1px solid var(--border); display: grid; place-items: center; color: var(--sage); margin-top: 50px; }.faq-item { border-color: var(--border); }.faq-item:first-child { border-top: 1px solid var(--border); }.faq-trigger { font-size: .98rem; font-weight: 700; padding: 23px 0; text-decoration: none; }.faq-trigger:hover { text-decoration: none; color: var(--sage); }.faq-trigger > span { display: flex; gap: 20px; align-items: start; }.faq-number { font-size: .67rem; font-weight: 800; letter-spacing: .06em; color: var(--sage); padding-top: 4px; }.faq-trigger svg { color: var(--sage); }.faq-answer { font-size: .91rem; line-height: 1.7; color: var(--muted-foreground); padding-left: 39px; }
+
+.final-section { background: var(--deep-blue); color: var(--primary-foreground); overflow: hidden; position: relative; }.final-inner { text-align: center; position: relative; padding: 94px 0 100px; }.final-mark { width: 55px; height: 55px; border-radius: 50%; border: 1px solid color-mix(in oklab, var(--primary-foreground) 35%, transparent); display: grid; place-items: center; margin: 0 auto 25px; color: var(--gold); }.eyebrow--light { color: var(--gold); }.final-inner h2 { font: 800 clamp(2.2rem, 4vw, 3.6rem)/1.18 var(--font-display); max-width: 720px; margin: 20px auto; }.final-inner p { color: color-mix(in oklab, var(--primary-foreground) 78%, transparent); font-size: 1.05rem; line-height: 1.7; margin: 0 auto 30px; }.final-inner .whatsapp-button { min-height: 55px; }.final-decor { position: absolute; width: 400px; height: 400px; border: 1px solid color-mix(in oklab, var(--primary-foreground) 10%, transparent); border-radius: 50%; pointer-events: none; }.final-decor-left { left: -270px; top: -180px; }.final-decor-right { right: -270px; bottom: -210px; }
+.site-footer { background: var(--background); }.footer-inner { min-height: 112px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }.footer-inner strong { font: 800 .87rem var(--font-display); }.footer-inner small, .footer-inner p { color: var(--muted-foreground); font-size: .75rem; }.footer-inner p { margin: 0; }.footer-inner a { display: inline-flex; align-items: center; gap: 7px; color: var(--primary); font-size: .75rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+
+@media (max-width: 900px) { .section { padding: 82px 0; }.pain-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }.help-grid { gap: 45px; }.help-art { min-height: 430px; }.about-grid { gap: 40px; }.faq-grid { gap: 45px; }.video-layout { gap: 40px; } }
+@media (max-width: 680px) {
+  .container { width: min(100% - 36px, 1160px); }.section { padding: 72px 0; }.section-heading h2 { font-size: 2rem; margin: 15px 0; }.section-heading p { font-size: .97rem; line-height: 1.75; }
+  .nav-inner { height: 65px; }.nav-brand img { width: 42px; height: 39px; }.nav-brand strong { font-size: .82rem; }.nav-brand small { display: none; }.nav-cta { height: 38px; padding-inline: 13px; font-size: .77rem; }
+  .hero { min-height: 710px; }.hero-image { object-position: 65% center; }.hero-shade { background: linear-gradient(90deg, color-mix(in oklab, var(--deep-blue) 95%, transparent), color-mix(in oklab, var(--deep-blue) 65%, transparent)), linear-gradient(0deg, color-mix(in oklab, var(--deep-blue) 80%, transparent), transparent 60%); }.hero-top { padding-top: 24px; }.hero-top-name { font-size: .53rem; max-width: 155px; text-align: right; line-height: 1.7; }.hero-top-name span { margin: 0 2px; }.hero-content { padding-top: 65px; }.hero h1 { font-size: clamp(2.25rem, 9vw, 3.5rem); margin: 23px 0 18px; }.hero-content > p { font-size: .97rem; line-height: 1.7; }.hero-trust { gap: 12px 16px; margin-top: 26px; padding-top: 20px; }.hero-trust span { font-size: .7rem; }.hero-scroll { padding-bottom: 18px; }
+  .pain-header { margin-bottom: 26px; }.header-ornament { display: none; }.pain-grid { grid-template-columns: 1fr; gap: 11px; }.pain-card { min-height: 0; padding: 21px 22px 25px; }.pain-card h3 { margin-top: 16px; }.pain-card p { padding-right: 15px; }.pain-arrow { bottom: 20px; right: 20px; }
+  .change-inner { padding: 56px 0; }.change-inner p { font-size: 1.2rem; }.change-deco { display: none; }
+  .help-grid, .about-grid, .video-layout, .faq-grid { grid-template-columns: 1fr; gap: 36px; }.help-art { min-height: 310px; order: 2; }.help-art-inner { width: 240px; }.help-art-ring-two { inset: 26px; }.help-copy { order: 1; }.help-art-center { width: 100px; height: 100px; }.help-art-center svg { width: 55px; }.help-art-caption { bottom: 16px; }
+  .steps { grid-template-columns: repeat(2, 1fr); row-gap: 38px; margin-top: 37px; }.steps-line { display: none; }.step-icon { width: 65px; height: 65px; }.step-count { margin-top: 13px; }
+  .portrait-placeholder { min-height: 340px; }.about-grid { gap: 45px; }.video-section { padding: 68px 0; }.video-layout { gap: 23px; }.video-support { margin-bottom: 0; }
+  .service-grid { grid-template-columns: 1fr; }.service-card { min-height: 0; padding: 29px; }.service-card .whatsapp-button { margin-top: 6px; }.service-card h3 { font-size: 1.35rem; }.price { font-size: 2rem; }
+  .testimonial-header { display: block; }.testimonial-note { margin-top: 7px; }.testimonials-section { padding-bottom: 72px; }.testimonial-placeholder { height: 310px; }.faq-aside-icon { display: none; }.faq-grid { gap: 20px; }.faq-trigger { font-size: .9rem; }.final-inner { padding: 75px 0 82px; }.final-inner h2 { font-size: 2.15rem; }.footer-inner { flex-wrap: wrap; padding-block: 24px; }.footer-inner p { order: 3; width: 100%; }
+}
+@media (max-width: 380px) { .hero { min-height: 830px; }.hero h1 { font-size: 2.17rem; }.hero-trust { display: grid; }.whatsapp-button { font-size: .82rem; padding-inline: 15px; }.nav-brand strong { font-size: .75rem; } }
+/* =============================================================================
+   CAMADA DE ANIMAÇÃO — sensacao premium, clean e leve
+   1. Fundos ambientes (aurora, brilhos, grade)
+   2. Revelacao no scroll com stagger
+   3. Micro-interacoes (cards, icones, botoes, FAQ)
+   4. Ornamentos em movimento
+   ============================================================================= */
+:root {
+  --ease-expo: cubic-bezier(.16, 1, .3, 1);
+  --ease-soft: cubic-bezier(.22, 1, .36, 1);
+}
+
+/* ---------- 1. FUNDOS ANIMADOS ---------- */
+.hero { position: relative; }
+.hero::after {
+  content: ""; position: absolute; inset: -18%; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(34% 32% at 72% 26%, color-mix(in oklab, var(--sage) 30%, transparent), transparent 68%),
+    radial-gradient(30% 28% at 88% 62%, color-mix(in oklab, var(--gold) 22%, transparent), transparent 70%),
+    radial-gradient(38% 34% at 62% 82%, color-mix(in oklab, var(--primary) 40%, transparent), transparent 72%);
+  filter: blur(34px); opacity: .5;
+  animation: aurora-drift 30s ease-in-out infinite alternate;
+  will-change: transform;
+}
+@keyframes aurora-drift {
+  0%   { transform: translate3d(0,0,0) scale(1); }
+  50%  { transform: translate3d(2.5%, -2%, 0) scale(1.07); }
+  100% { transform: translate3d(-2%, 2.5%, 0) scale(1.03); }
+}
+
+.pain-section, .services-section, .faq-section, .help-section { position: relative; }
+.pain-section::before, .services-section::before, .faq-section::before, .help-section::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background: radial-gradient(58% 42% at 12% 0%, color-mix(in oklab, var(--sage) 9%, transparent), transparent 62%);
+}
+.pain-section > .container, .services-section > .container, .faq-section > .container, .help-section > .container { position: relative; z-index: 1; }
+
+.change-section, .video-section, .testimonials-section { position: relative; overflow: hidden; }
+.change-section::before, .video-section::before, .testimonials-section::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background:
+    radial-gradient(46% 40% at 88% 6%, color-mix(in oklab, var(--card) 70%, transparent), transparent 66%),
+    radial-gradient(40% 36% at 6% 92%, color-mix(in oklab, var(--sage) 13%, transparent), transparent 68%);
+  animation: wash-pan 24s ease-in-out infinite alternate;
+}
+@keyframes wash-pan {
+  0%   { opacity: .55; transform: scale(1) translate3d(0,0,0); }
+  100% { opacity: .95; transform: scale(1.12) translate3d(-1.5%, 1%, 0); }
+}
+.change-inner, .video-layout, .testimonials-section > .container { position: relative; z-index: 1; }
+
+.final-section::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+  background: radial-gradient(48% 44% at 50% 108%, color-mix(in oklab, var(--sage) 30%, transparent), transparent 70%);
+  animation: aurora-drift 34s ease-in-out infinite alternate;
+}
+.final-inner { z-index: 1; }
+
+.live-dot { animation: dot-breathe 2.6s ease-in-out infinite; }
+@keyframes dot-breathe {
+  0%, 100% { box-shadow: 0 0 0 4px color-mix(in oklab, var(--gold) 20%, transparent); transform: scale(1); }
+  50%      { box-shadow: 0 0 0 9px color-mix(in oklab, var(--gold) 0%, transparent); transform: scale(1.18); }
+}
+
+/* ---------- 2. REVELACAO NO SCROLL ---------- */
+.js-reveal:not(.reduced) [data-reveal] {
+  opacity: 0; transform: translateY(28px);
+  transition: opacity .95s var(--ease-expo), transform .95s var(--ease-expo);
+  transition-delay: var(--rd, 0ms);
+}
+.js-reveal:not(.reduced) [data-reveal].is-in { opacity: 1; transform: none; }
+.js-reveal:not(.reduced) [data-reveal="left"]  { transform: translateX(-32px); }
+.js-reveal:not(.reduced) [data-reveal="right"] { transform: translateX(32px); }
+.js-reveal:not(.reduced) [data-reveal="zoom"]  { transform: scale(.94); }
+.js-reveal:not(.reduced) [data-reveal].is-in   { transform: none; }
+
+/* ---------- 3. MICRO-INTERACOES ---------- */
+.pain-card, .service-card, .step-icon, .credential, .video-placeholder, .testimonial-placeholder, .faq-item {
+  transition: transform .55s var(--ease-soft), box-shadow .55s var(--ease-soft), border-color .4s ease;
+}
+.pain-card, .service-card, .video-placeholder, .testimonial-placeholder, .faq-item { position: relative; overflow: hidden; }
+
+.pain-card::after, .service-card:not(.service-card--featured)::after, .testimonial-placeholder::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: radial-gradient(115% 85% at 50% 0%, color-mix(in oklab, var(--sage) 15%, transparent), transparent 60%);
+  opacity: 0; transition: opacity .55s ease;
+}
+.pain-card:hover::after, .service-card:not(.service-card--featured):hover::after, .testimonial-placeholder:hover::after { opacity: 1; }
+
+.pain-card:hover, .testimonial-placeholder:hover { transform: translateY(-7px); }
+.service-card:not(.service-card--featured):hover { transform: translateY(-7px); box-shadow: 0 26px 50px color-mix(in oklab, var(--deep-blue) 13%, transparent); }
+.service-card--blue:hover { box-shadow: 0 26px 52px color-mix(in oklab, var(--primary) 20%, transparent); }
+.pain-card:hover { box-shadow: 0 22px 40px color-mix(in oklab, var(--deep-blue) 12%, transparent); }
+
+.pain-card > *, .service-card > *, .testimonial-placeholder > * { position: relative; z-index: 1; }
+.pain-card svg, .service-card .service-icon svg, .step-icon svg, .check-list svg {
+  transition: transform .5s var(--ease-soft);
+}
+.pain-card:hover > .pain-card-top svg { transform: translateY(-4px) scale(1.08); }
+.service-card:not(.service-card--featured):hover .service-icon svg { transform: translateY(-3px) scale(1.08); }
+.service-card--featured:hover .service-icon svg { transform: translateY(-3px) scale(1.08); }
+
+.service-icon { transition: transform .5s var(--ease-soft), box-shadow .5s var(--ease-soft); }
+.pain-card:hover .pain-card-top > span:first-child { transform: translateY(-3px) rotate(-4deg); }
+
+.step-icon { overflow: visible; }
+.step-icon::after {
+  content: ""; position: absolute; inset: -1px; border-radius: 50%;
+  border: 1px solid color-mix(in oklab, var(--sage) 55%, transparent);
+  opacity: 0; transform: scale(.9);
+  transition: opacity .5s ease, transform .6s var(--ease-soft);
+  pointer-events: none;
+}
+.step:hover .step-icon::after, .step-icon:hover::after { opacity: 1; transform: scale(1.14); }
+.step-icon:hover { transform: translateY(-5px); box-shadow: 0 16px 30px color-mix(in oklab, var(--deep-blue) 12%, transparent); }
+
+.check-list li { transition: transform .45s var(--ease-soft); }
+.check-list li:hover { transform: translateX(6px); }
+
+.faq-item { transition: background-color .4s ease, transform .45s var(--ease-soft); }
+.faq-item:hover { background: color-mix(in oklab, var(--soft-mint) 42%, transparent); }
+.faq-trigger svg { transition: transform .45s var(--ease-soft); }
+.faq-item:hover .faq-trigger > svg:first-child { transform: rotate(-7deg) scale(1.1); }
+
+.pain-card .pain-arrow, .pain-arrow { transition: transform .45s var(--ease-soft); }
+.pain-card:hover .pain-arrow { transform: translate(4px, -4px); }
+
+.eyebrow-line { transition: width .55s var(--ease-soft); }
+.eyebrow:hover .eyebrow-line, .section-heading:hover .eyebrow-line { width: 40px; }
+
+.final-mark { transition: transform .6s var(--ease-soft), box-shadow .6s var(--ease-soft); }
+.final-section:hover .final-mark { transform: rotate(90deg) scale(1.06); box-shadow: 0 0 0 10px color-mix(in oklab, var(--gold) 10%, transparent); }
+.final-inner .whatsapp-button { box-shadow: 0 16px 40px color-mix(in srgb, var(--wa-green) 32%, transparent); }
+
+/* sheen diagonal nos botoes e cards */
+.whatsapp-button span, .whatsapp-button svg { position: relative; z-index: 1; }
+.whatsapp-button { will-change: transform; }
+.whatsapp-button:hover { will-change: transform; }
+
+/* ---------- 4. ORNAMENTOS EM MOVIMENTO ---------- */
+.help-art-ring-one { animation: ring-spin 44s linear infinite; }
+.help-art-ring-two { animation: ring-spin 34s linear infinite reverse; }
+@keyframes ring-spin { to { transform: rotate(360deg); } }
+.help-art-ring { border-radius: 50%; }
+.help-art-ring-one::after, .help-art-ring-two::after { content: none; }
+.help-art-center { animation: core-breathe 7s ease-in-out infinite; }
+@keyframes core-breathe {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 color-mix(in oklab, var(--sage) 26%, transparent); }
+  50%      { transform: scale(1.045); box-shadow: 0 0 0 16px color-mix(in oklab, var(--sage) 0%, transparent); }
+}
+.help-art-small-one { animation: bob-a 6.5s ease-in-out infinite; }
+.help-art-small-two { animation: bob-b 8s ease-in-out infinite; }
+@keyframes bob-a { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-11px); } }
+@keyframes bob-b { 0%,100% { transform: translateY(0); } 50% { transform: translateY(12px); } }
+
+.final-decor-left  { animation: ring-spin 60s linear infinite; }
+.final-decor-right { animation: ring-spin 48s linear infinite reverse; }
+.final-decor { border-radius: 50%; }
+
+.steps-line { background: linear-gradient(90deg, transparent, color-mix(in oklab, var(--sage) 55%, transparent) 18%, color-mix(in oklab, var(--sage) 55%, transparent) 82%, transparent); background-size: 220% 100%; animation: line-flow 9s linear infinite; }
+@keyframes line-flow { from { background-position: 100% 0; } to { background-position: -20% 0; } }
+
+.hero-scroll svg, .hero-scroll i { animation: nudge-down 2.4s ease-in-out infinite; }
+@keyframes nudge-down { 0%,100% { transform: translateY(0); opacity: .85; } 50% { transform: translateY(5px); opacity: 1; } }
+
+.video-placeholder { transition: transform .6s var(--ease-soft), box-shadow .6s var(--ease-soft), border-color .5s; }
+.video-placeholder:hover { transform: translateY(-6px) scale(1.008); box-shadow: 0 26px 54px color-mix(in oklab, var(--deep-blue) 12%, transparent); }
+.video-placeholder .service-icon, .video-placeholder > span { transition: transform .6s var(--ease-soft); }
+.video-placeholder:hover > span { transform: scale(1.1); }
+
+.testimonial-placeholder { transition: transform .6s var(--ease-soft), box-shadow .6s var(--ease-soft), border-color .5s; }
+.credential { transition: transform .5s var(--ease-soft), box-shadow .5s var(--ease-soft), border-color .4s; }
+.credential:hover { transform: translateY(-4px); box-shadow: 0 16px 32px color-mix(in oklab, var(--deep-blue) 11%, transparent); border-color: color-mix(in oklab, var(--sage) 50%, transparent); }
+
+.final-inner h2, .section-heading h2 { transition: letter-spacing .7s var(--ease-soft); }
+.section-heading--center:hover h2, .final-inner:hover h2 { letter-spacing: -.015em; }
+
+.help-art-inner { transform: translateY(var(--py, 0px)); }
+.help-art-caption { transform: translateY(var(--py, 0px)); }
+.final-inner > * { transform: translateY(var(--py, 0px)); }
+.final-inner > [data-reveal] { transform: translateY(calc(28px + var(--py, 0px))); }
+.js-reveal:not(.reduced) .final-inner > [data-reveal].is-in { transform: translateY(var(--py, 0px)); }
+.js-reveal:not(.reduced) .final-inner > *:not([data-reveal]) { transform: translateY(var(--py, 0px)); }
+
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal [data-reveal] { opacity: 1 !important; transform: none !important; }
+  .help-art-inner, .help-art-caption, .final-inner > * { transform: none !important; }
+  .hero::after, .change-section::before, .video-section::before, .testimonials-section::before, .final-section::before { animation: none; }
+}
+@media (max-width: 680px) {
+  .hero::after { filter: blur(26px); opacity: .4; }
+  .wash-pan, .change-section::before, .video-section::before, .testimonials-section::before { animation: none; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *:before, *:after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script>window.__ICONS__ = {"shield-check":"\u003cpath d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\" /\u003e \u003cpath d=\"m9 12 2 2 4-4\" /\u003e","cloud":"\u003cpath d=\"M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z\" /\u003e","user-round":"\u003ccircle cx=\"12\" cy=\"8\" r=\"5\" /\u003e \u003cpath d=\"M20 21a8 8 0 0 0-16 0\" /\u003e","brain":"\u003cpath d=\"M12 18V5\" /\u003e \u003cpath d=\"M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4\" /\u003e \u003cpath d=\"M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5\" /\u003e \u003cpath d=\"M17.997 5.125a4 4 0 0 1 2.526 5.77\" /\u003e \u003cpath d=\"M18 18a4 4 0 0 0 2-7.464\" /\u003e \u003cpath d=\"M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517\" /\u003e \u003cpath d=\"M6 18a4 4 0 0 1-2-7.464\" /\u003e \u003cpath d=\"M6.003 5.125a4 4 0 0 0-2.526 5.77\" /\u003e","quote":"\u003cpath d=\"M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z\" /\u003e \u003cpath d=\"M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z\" /\u003e","check":"\u003cpath d=\"M20 6 9 17l-5-5\" /\u003e","arrow-down":"\u003cpath d=\"M12 5v14\" /\u003e \u003cpath d=\"m19 12-7 7-7-7\" /\u003e","chevron-down":"\u003cpath d=\"m6 9 6 6 6-6\" /\u003e","arrow-right":"\u003cpath d=\"M5 12h14\" /\u003e \u003cpath d=\"m12 5 7 7-7 7\" /\u003e","message-circle":"\u003cpath d=\"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719\" /\u003e","play":"\u003cpath d=\"M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z\" /\u003e","badge-check":"\u003cpath d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z\" /\u003e \u003cpath d=\"m16 9-5.5 5.5L8 12\" /\u003e","circle-help":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\" /\u003e \u003cpath d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\" /\u003e \u003cpath d=\"M12 17h.01\" /\u003e","arrow-up-right":"\u003cpath d=\"M7 7h10v10\" /\u003e \u003cpath d=\"M7 17 17 7\" /\u003e","clock-3":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\" /\u003e \u003cpath d=\"M12 6v6h4\" /\u003e","star":"\u003cpath d=\"M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z\" /\u003e","heart":"\u003cpath d=\"M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5\" /\u003e","users-round":"\u003cpath d=\"M18 21a8 8 0 0 0-16 0\" /\u003e \u003ccircle cx=\"10\" cy=\"8\" r=\"5\" /\u003e \u003cpath d=\"M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3\" /\u003e","heart-handshake":"\u003cpath d=\"M19.414 14.414C21 12.828 22 11.5 22 9.5a5.5 5.5 0 0 0-9.591-3.676.6.6 0 0 1-.818.001A5.5 5.5 0 0 0 2 9.5c0 2.3 1.5 4 3 5.5l5.535 5.362a2 2 0 0 0 2.879.052 2.12 2.12 0 0 0-.004-3 2.124 2.124 0 1 0 3-3 2.124 2.124 0 0 0 3.004 0 2 2 0 0 0 0-2.828l-1.881-1.882a2.41 2.41 0 0 0-3.409 0l-1.71 1.71a2 2 0 0 1-2.828 0 2 2 0 0 1 0-2.828l2.823-2.762\" /\u003e","sparkles":"\u003cpath d=\"M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z\" /\u003e \u003cpath d=\"M20 2v4\" /\u003e \u003cpath d=\"M22 4h-4\" /\u003e \u003ccircle cx=\"4\" cy=\"20\" r=\"2\" /\u003e","waves":"\u003cpath d=\"M2 12q2.5 2 5 0t5 0 5 0 5 0\" /\u003e \u003cpath d=\"M2 19q2.5 2 5 0t5 0 5 0 5 0\" /\u003e \u003cpath d=\"M2 5q2.5 2 5 0t5 0 5 0 5 0\" /\u003e","move-up-right":"\u003cpath d=\"M13 5H19V11\" /\u003e \u003cpath d=\"M19 5L5 19\" /\u003e","activity":"\u003cpath d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\" /\u003e"};</script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+
+<script type="text/babel" data-type="module" data-presets="react">
+const { useEffect, useLayoutEffect, useRef, useState, useContext, createContext, createElement } = React;
+
+const ICONS = window.__ICONS__;
+const cn = (...parts) => parts.filter(Boolean).join(" ");
+
+/* lucide-react: <svg width={size} height={size} viewBox="0 0 24 24" fill stroke="currentColor"
+   strokeWidth strokeLinecap="round" strokeLinejoin="round"> + path data */
+function Icon({ name, size = 24, strokeWidth = 2, fill = "none", className, ...rest }) {
+  return createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: fill,
+    stroke: "currentColor",
+    strokeWidth: strokeWidth,
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    className: cn("lucide", `lucide-${name}`, className),
+    ...rest,
+    dangerouslySetInnerHTML: { __html: ICONS[name] }
+  });
+}
+
+/* Logo oficial do WhatsApp (marca) — preenchido, nao e um icone de linha */
+const WHATSAPP_LOGO = "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.464 3.488";
+function WhatsAppGlyph({ size = 18, className, ...rest }) {
+  return createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    width: size,
+    height: size,
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+    stroke: "none",
+    className: cn("whatsapp-glyph", className),
+    focusable: "false",
+    "aria-hidden": "true",
+    ...rest,
+    dangerouslySetInnerHTML: { __html: '<path d="' + WHATSAPP_LOGO + '"/>' }
+  });
+}
+
+/* ---------- shadcn/ui accordion (Radix) portado ---------- */
+const AccordionCtx = createContext({ openValue: null, toggle: () => {} });
+const ItemCtx = createContext({ isOpen: false, idBase: "", toggle: () => {} });
+let accId = 0;
+
+function Accordion({ type, collapsible, className, children }) {
+  const [openValue, setOpenValue] = useState(null);
+  const toggle = (v) => setOpenValue((cur) => (cur === v ? (collapsible ? null : cur) : v));
+  return (
+    <AccordionCtx.Provider value={{ openValue, toggle }}>
+      <div className={className} data-orientation="vertical">{children}</div>
+    </AccordionCtx.Provider>
+  );
+}
+
+function AccordionItem({ value, className, children }) {
+  const { openValue, toggle } = useContext(AccordionCtx);
+  const isOpen = openValue === value;
+  const idBase = useRef("acc-" + ++accId).current;
+  return (
+    <ItemCtx.Provider value={{ isOpen, idBase, toggle: () => toggle(value) }}>
+      <div className={cn("faq-item", className)} data-orientation="vertical" data-state={isOpen ? "open" : "closed"}>
+        {children}
+      </div>
+    </ItemCtx.Provider>
+  );
+}
+
+const TRIGGER_BASE = "flex flex-1 items-center justify-between py-4 text-sm font-medium cursor-pointer transition-all hover:underline text-left [&[data-state=open]>svg]:rotate-180";
+
+function AccordionTrigger({ className, children }) {
+  const { isOpen, idBase, toggle } = useContext(ItemCtx);
+  return (
+    <h3 className="flex" data-orientation="vertical" data-state={isOpen ? "open" : "closed"}>
+      <button type="button" className={cn(TRIGGER_BASE, className)} id={idBase}
+        aria-expanded={isOpen} aria-controls={idBase + "-content"}
+        data-state={isOpen ? "open" : "closed"} data-orientation="vertical" onClick={toggle}>
+        {children}
+        <Icon name="chevron-down" className="faq-chevron" />
+      </button>
+    </h3>
+  );
+}
+
+function AccordionContent({ className, children }) {
+  const { isOpen, idBase } = useContext(ItemCtx);
+  const ref = useRef(null);
+  const [gone, setGone] = useState(true);
+
+  useEffect(() => {
+    if (isOpen) { setGone(false); return; }
+    const t = setTimeout(() => setGone(true), 200);
+    return () => clearTimeout(t);
+  }, [isOpen]);
+
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const measure = () => el.style.setProperty("--radix-accordion-content-height", el.scrollHeight + "px");
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, [isOpen, children]);
+
+  return (
+    <div ref={ref} role="region" id={idBase + "-content"} aria-labelledby={idBase}
+      className="faq-content" data-orientation="vertical"
+      data-state={isOpen ? "open" : "closed"} hidden={!isOpen && gone}>
+      <div className={cn("pb-4 pt-0", className)}>{children}</div>
+    </div>
+  );
+}
+
+/* ---------- shadcn/ui button + WhatsAppLink ---------- */
+function WhatsAppLink({ children, message, variant = "solid", className, arrow = false }) {
+  const href = `https://api.whatsapp.com/send?phone=5511910600264&text=${encodeURIComponent(message)}`;
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={cn("whatsapp-button", `whatsapp-button--${variant}`, className)}>
+      <WhatsAppGlyph size={19} />
+      <span>{children}</span>
+      {arrow && <Icon name="arrow-up-right" size={17} strokeWidth={2} aria-hidden="true" />}
+    </a>
+  );
+}
+
+/* ---------- src/components/TestimonialsMarquee.tsx ---------- */
+const placeholders = ["01", "02", "03", "04", "05"];
+
+function TestimonialsMarquee() {
+  const trackRef = useRef(null);
+  const groupRef = useRef(null);
+  const offsetRef = useRef(0);
+  const draggingRef = useRef(false);
+  const lastXRef = useRef(0);
+
+  useEffect(() => {
+    let frame = 0;
+    let lastTime = 0;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const animate = (time) => {
+      const width = groupRef.current ? groupRef.current.getBoundingClientRect().width : 0;
+      if (width) {
+        if (!draggingRef.current && !reduceMotion.matches && lastTime) {
+          offsetRef.current -= Math.min(time - lastTime, 64) * 0.025;
+        }
+        offsetRef.current = ((offsetRef.current % width) + width) % width;
+        if (trackRef.current) trackRef.current.style.transform = `translate3d(${-width + offsetRef.current}px,0,0)`;
+      }
+      lastTime = time;
+      frame = requestAnimationFrame(animate);
+    };
+    frame = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(frame);
+  }, []);
+
+  function onPointerDown(event) {
+    draggingRef.current = true;
+    lastXRef.current = event.clientX;
+    event.currentTarget.setPointerCapture(event.pointerId);
+  }
+  function onPointerMove(event) {
+    if (!draggingRef.current) return;
+    offsetRef.current += event.clientX - lastXRef.current;
+    lastXRef.current = event.clientX;
+  }
+  function onPointerUp() {
+    draggingRef.current = false;
+  }
+
+  const cards = (copy) => (
+    <div className="testimonial-group" ref={copy === 0 ? groupRef : undefined} aria-hidden={copy !== 1} key={copy}>
+      {placeholders.map((item, index) => (
+        <div className={`testimonial-placeholder testimonial-placeholder-${index + 1}`} key={item}>
+          <div className="testimonial-stars" aria-hidden="true">
+            {Array.from({ length: 5 }, (_, star) => <Icon name="star" key={star} size={15} fill="currentColor" />)}
+          </div>
+          <Icon name="quote" size={37} strokeWidth={1.3} aria-hidden="true" />
+          <span>Aguardando print do Google</span>
+          <small>AVALIAÇÃO {item}</small>
+        </div>
+      ))}
+    </div>
+  );
+
+  return (
+    <div className="testimonial-viewport" aria-label="Espaço reservado para avaliações do Google"
+      onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp}
+      onPointerCancel={onPointerUp} onLostPointerCapture={onPointerUp}>
+      <div ref={trackRef} className="testimonial-track">{[0, 1, 2].map(cards)}</div>
+    </div>
+  );
+}
+
+/* ---------- src/routes/index.tsx ---------- */
+const pains = [
+  { icon: "activity", title: "Ansiedade", text: "Aquela sensação de alerta constante, difícil de desligar." },
+  { icon: "waves", title: "Sobrecarga emocional", text: "Como se tudo pedisse resposta ao mesmo tempo." },
+  { icon: "shield-check", title: "Medos", text: "Preocupações que antecipam o pior antes mesmo de acontecer." },
+  { icon: "sparkles", title: "Inseguranças", text: "Dúvidas que travam decisões simples do dia a dia." },
+  { icon: "heart", title: "Autoestima", text: "A sensação de nunca estar bom o suficiente." },
+  { icon: "users-round", title: "Dificuldades nos relacionamentos", text: "Sentir que não está sendo compreendido(a), ou ter dificuldade para se expressar." },
+];
+
+const faq = [
+  ["O atendimento é mesmo 100% on-line?", "Sim, todas as sessões acontecem on-line, com total privacidade."],
+  ["Quanto tempo dura cada sessão?", "Aproximadamente 60 minutos."],
+  ["Qual é a abordagem utilizada?", "A TRG (Terapia de Reprocessamento Generativo) é a principal abordagem."],
+  ["Como faço para agendar?", "Basta chamar no WhatsApp para conversarmos sobre o melhor horário."],
+  ["Quais são os valores?", "Sessão individual: R$ 200. Programa Reequilíbrio Emocional (8 sessões): R$ 1.360."],
+];
+
+const logoNavbar = "logo-abraph-navbar.png";
+const logoSelo = "logo-abraph-selo.png";
+const heroCoast = "hero-coast.jpg";
+
+function SectionHeading({ eyebrow, title, description, centered = false }) {
+  return <div className={`section-heading ${centered ? "section-heading--center" : ""}`}>
+    {eyebrow && <span className="eyebrow"><span className="eyebrow-line" />{eyebrow}</span>}
+    <h2>{title}</h2>
+    {description && <p>{description}</p>}
+  </div>;
+}
+
+function HomePage() {
+  const [showNav, setShowNav] = useState(false);
+  useEffect(() => {
+    const update = () => {
+      const hero = document.getElementById("inicio");
+      setShowNav(window.scrollY > (hero ? hero.offsetHeight : 700) * 0.66);
+    };
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    return () => { window.removeEventListener("scroll", update); window.removeEventListener("resize", update); };
+  }, []);
+
+  /* revelacao progressiva no scroll + parallax leve */
+  useEffect(() => {
+    const root = document.documentElement;
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (mq.matches) { root.classList.add("reduced"); return; }
+    root.classList.add("js-reveal");
+
+    const groups = [
+      [".section-heading", 0], [".pain-card", 90], [".change-inner > *", 0],
+      [".check-list li", 80], [".help-copy > *", 0], [".step", 95],
+      [".credential", 0], [".portrait-placeholder", 0], [".video-layout > *", 0],
+      [".service-card", 130], [".testimonial-header > *", 0], [".faq-grid > *", 0],
+      [".faq-item", 60], [".final-inner > *", 110], [".hero-scroll", 0]
+    ];
+    const nodes = [];
+    groups.forEach(([sel, step]) => {
+      const list = Array.from(document.querySelectorAll(sel));
+      list.forEach((el, i) => {
+        if (el.closest(".hero")) return;
+        el.setAttribute("data-reveal", "");
+        if (step) el.style.setProperty("--rd", Math.min(i * step, 420) + "ms");
+        nodes.push(el);
+      });
+    });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    nodes.forEach((el) => io.observe(el));
+
+    /* parallax sutil nos ornamentos */
+    const decor = document.querySelectorAll(".help-art-inner, .help-art-caption, .final-inner > *");
+    let raf = null;
+    const onScroll = () => {
+      if (raf) return;
+      raf = requestAnimationFrame(() => {
+        const y = window.scrollY;
+        decor.forEach((el) => {
+          const r = el.getBoundingClientRect();
+          const d = (r.top + r.height / 2 - window.innerHeight / 2);
+          el.style.setProperty("--py", (d * -0.035).toFixed(2) + "px");
+        });
+        raf = null;
+      });
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => { io.disconnect(); window.removeEventListener("scroll", onScroll); };
+  }, []);
+
+
+  return <main>
+    <header className={`floating-nav ${showNav ? "floating-nav--visible" : ""}`} aria-hidden={!showNav}>
+      <div className="container nav-inner">
+        <a className="nav-brand" href="#inicio" tabIndex={showNav ? 0 : -1} aria-label="Claudir J. Corrêa — voltar ao início">
+          <img src={logoNavbar} width="56" height="43" alt="Selo ABRAPH" />
+          <span><strong>Claudir J. Corrêa</strong><small>Terapeuta Integrativo</small></span>
+        </a>
+        <WhatsAppLink className="nav-cta" message="Olá, Claudir! Gostaria de conversar sobre o atendimento.">WhatsApp</WhatsAppLink>
+      </div>
+    </header>
+
+    <section id="inicio" className="hero">
+      <img className="hero-image" src={heroCoast} width="1536" height="1024" alt="Mar tranquilo ao amanhecer" fetchpriority="high" />
+      <div className="hero-shade" />
+      <div className="container hero-inner">
+        <div className="hero-top"><span className="hero-monogram">C<span className="hero-monogram-dot">·</span>J<span className="hero-monogram-dot">·</span>C</span><span className="hero-top-name">CLAUDIR J. CORRÊA <span> / </span> TERAPEUTA INTEGRATIVO</span></div>
+        <div className="hero-content">
+          <span className="hero-tag"><span className="live-dot" /> Atendimento 100% on-line</span>
+          <h1>Ansiedade, estresse ou a sensação de que os pensamentos não param?</h1>
+          <p>Você não precisa continuar carregando isso sozinho. Um espaço de escuta e cuidado com Claudir J. Corrêa, Terapeuta Integrativo.</p>
+          <WhatsAppLink variant="light" arrow className="hero-cta" message="Olá, Claudir! Gostaria de conversar sobre o atendimento on-line.">Falar agora no WhatsApp</WhatsAppLink>
+          <div className="hero-trust" aria-label="Informações sobre o atendimento">
+            <span><Icon name="clock-3" size={16} /> Atuação desde 2007</span><span><Icon name="brain" size={16} /> TRG como abordagem principal</span><span><Icon name="badge-check" size={16} /> Registro ABRAPH 07853AB</span>
+          </div>
+        </div>
+        <a className="hero-scroll" href="#identificacao" aria-label="Ir para a próxima seção"><span>EXPLORE A PÁGINA</span><Icon name="arrow-down" size={16} /></a>
+      </div>
+    </section>
+
+    <section id="identificacao" className="section pain-section">
+      <div className="container">
+        <div className="pain-header"><SectionHeading eyebrow="Identificação" title="Isso tem soado familiar pra você?" description="Cada pessoa vive isso de um jeito. Talvez você se reconheça em uma ou mais dessas situações:" /><div className="header-ornament" aria-hidden="true"><span>01</span><i /></div></div>
+        <div className="pain-grid">{pains.map(({ icon, title, text }, index) => <article className="pain-card" key={title}><div className="pain-card-top"><span className="icon-box"><Icon name={icon} size={25} strokeWidth={1.65} /></span><span className="card-number">0{index + 1}</span></div><h3>{title}</h3><p>{text}</p><Icon name="arrow-right" className="pain-arrow" size={17} /></article>)}</div>
+      </div>
+    </section>
+
+    <section className="change-section"><div className="container change-inner"><span className="change-symbol" aria-hidden="true"><Icon name="heart-handshake" size={30} strokeWidth={1.35} /></span><p>Cuidar das suas questões emocionais pode ser o primeiro passo para mais equilíbrio e bem-estar. <strong>Você não precisa ter todas as respostas agora, só o espaço certo para começar.</strong></p><span className="change-deco" aria-hidden="true">✳</span></div></section>
+
+    <section id="ajuda" className="section help-section"><div className="container help-grid"><div className="help-art" aria-hidden="true"><div className="help-art-inner"><span className="help-art-ring help-art-ring-one" /><span className="help-art-ring help-art-ring-two" /><span className="help-art-center"><Icon name="heart" size={72} strokeWidth={0.75} /></span><span className="help-art-small help-art-small-one"><Icon name="waves" size={23} /></span><span className="help-art-small help-art-small-two"><Icon name="sparkles" size={21} /></span></div><span className="help-art-caption">ESCUTA · RESPEITO · ACOLHIMENTO</span></div><div className="help-copy"><SectionHeading eyebrow="Como posso ajudar" title="Um espaço de escuta, no seu tempo" description="Trabalho com adultos que enfrentam ansiedade, estresse, sobrecarga emocional, medos, inseguranças e baixa autoestima. Minha principal abordagem é a TRG (Terapia de Reprocessamento Generativo), que ajuda a olhar essas questões de um jeito mais leve e prático, respeitando a história e o tempo de cada pessoa." /><ul className="check-list"><li><Icon name="check" size={16} />TRG como abordagem principal, sem fórmulas prontas</li><li><Icon name="check" size={16} />Escuta respeitosa, no tempo de cada pessoa</li><li><Icon name="check" size={16} />Espaço privado e sem julgamentos</li></ul><WhatsAppLink variant="outline" arrow message="Olá, Claudir! Quero entender melhor como funciona seu atendimento com TRG.">Quero entender melhor</WhatsAppLink></div></div></section>
+
+    <section id="funciona" className="section process-section"><div className="container"><SectionHeading eyebrow="Como funciona" title="O atendimento, de forma simples" centered /><div className="steps"><div className="steps-line" aria-hidden="true" />{[{ icon: "user-round", title: "Individual", text: "Sessões um a um" }, { icon: "cloud", title: "100% on-line", text: "De onde você estiver" }, { icon: "clock-3", title: "~60 minutos", text: "Por sessão" }, { icon: "brain", title: "TRG", text: "Abordagem principal" }].map(({ icon, title, text }, i) => <div className="step" key={title}><span className="step-icon"><Icon name={icon} size={27} strokeWidth={1.55} /></span><span className="step-count">0{i + 1}</span><h3>{title}</h3><p>{text}</p></div>)}</div></div></section>
+
+    <section id="sobre" className="section about-section"><div className="container about-grid"><div className="portrait-placeholder" role="img" aria-label="Espaço reservado para a foto de Claudir J. Corrêa"><div className="portrait-frame"><Icon name="user-round" size={75} strokeWidth={0.75} /><span>FOTO DE CLAUDIR<br />EM BREVE</span></div><span className="portrait-corner" /></div><div className="about-copy"><SectionHeading eyebrow="Sobre mim" title="Claudir J. Corrêa" description="Sou Claudir J. Corrêa, Terapeuta Integrativo, com atuação na área terapêutica desde 2007. Acredito que cada pessoa tem uma história única, por isso ofereço um espaço de escuta, respeito e acolhimento, considerando o momento e as necessidades de cada pessoa. O atendimento é realizado 100% on-line, de forma individualizada e com privacidade." /><div className="about-divider" /><p className="mini-label">FORMAÇÃO E CONHECIMENTOS</p><div className="formation-pills"><span className="formation-primary">TRG (abordagem principal)</span><span>Reiki</span><span>PNL</span><span>Hipnose</span><span>Inteligência Emocional</span></div><div className="credential"><img src={logoSelo} width="92" height="74" alt="Selo ABRAPH terapeuta credenciado 07853AB" /><span><strong>ABRAPH Credenciado</strong><small>Registro 07853AB</small></span><Icon name="badge-check" size={21} aria-hidden="true" /></div></div></div></section>
+
+    <section id="video" className="section video-section"><div className="container video-layout"><div><SectionHeading eyebrow="Apresentação" title="Um pouco sobre o meu trabalho" /><p className="video-support">Uma conversa mais de perto, em breve.</p></div><div className="video-placeholder" aria-label="Vídeo a ser inserido em breve"><span className="play-circle"><Icon name="play" size={26} fill="currentColor" /></span><span>Vídeo a ser inserido em breve</span></div></div></section>
+
+    <section id="servicos" className="section services-section"><div className="container"><SectionHeading eyebrow="Serviços" title="Formas de atendimento" centered /><div className="service-grid"><article className="service-card service-card--blue"><div className="service-top"><span className="service-icon service-icon--wa"><WhatsAppGlyph size={26} /></span><span className="service-index">01 / INDIVIDUAL</span></div><h3>Terapia Online</h3><p className="service-subtitle">Sessão individual</p><div className="price">R$ 200</div><div className="service-line" /><ul><li><Icon name="check" size={16} />Atendimento 100% on-line</li><li><Icon name="check" size={16} />~60 minutos, no seu horário</li></ul><WhatsAppLink arrow message="Olá, Claudir! Gostaria de agendar uma sessão individual de Terapia Online.">Agendar pelo WhatsApp</WhatsAppLink></article><article className="service-card service-card--featured"><div className="service-top"><span className="service-icon"><Icon name="heart-handshake" size={25} strokeWidth={1.5} /></span><span className="service-highlight">Pacote completo</span></div><h3>Programa Reequilíbrio Emocional</h3><p className="service-subtitle">8 sessões</p><div className="price">R$ 1.360</div><div className="service-line" /><ul><li><Icon name="check" size={16} />8 sessões individuais</li><li><Icon name="check" size={16} />Acompanhamento contínuo com TRG</li></ul><WhatsAppLink arrow variant="light" message="Olá, Claudir! Gostaria de saber mais sobre o Programa Reequilíbrio Emocional de 8 sessões.">Saber mais pelo WhatsApp</WhatsAppLink></article></div></div></section>
+
+    <section id="depoimentos" className="section testimonials-section"><div className="container"><div className="testimonial-header"><SectionHeading eyebrow="Depoimentos" title="Histórias que merecem ser ouvidas" /><div className="testimonial-note"><Icon name="star" size={18} fill="currentColor" /> Avaliações do Google em breve</div></div></div><TestimonialsMarquee /></section>
+
+    <section id="faq" className="section faq-section"><div className="container faq-grid"><div><SectionHeading eyebrow="Perguntas frequentes" title="Talvez você ainda tenha alguma dúvida" /><div className="faq-aside-icon" aria-hidden="true"><Icon name="circle-help" size={44} strokeWidth={1} /></div></div><Accordion type="single" collapsible className="faq-list">{faq.map(([question, answer], i) => <AccordionItem value={`faq-${i}`} key={question} className="faq-item"><AccordionTrigger className="faq-trigger"><span><span className="faq-number">0{i + 1}</span>{question}</span></AccordionTrigger><AccordionContent className="faq-answer">{answer}</AccordionContent></AccordionItem>)}</Accordion></div></section>
+
+    <section id="contato" className="final-section"><div className="container final-inner"><div className="final-mark"><Icon name="sparkles" size={24} strokeWidth={1.3} /></div><span className="eyebrow eyebrow--light"><span className="eyebrow-line" /> SEU PRÓXIMO PASSO</span><h2>Dar o primeiro passo já é um cuidado com você</h2><p>Se algo do que você leu aqui fez sentido, será um prazer conversar.</p><WhatsAppLink variant="light" arrow message="Olá, Claudir! Li seu site e gostaria de conversar sobre o atendimento.">Falar com Claudir no WhatsApp</WhatsAppLink><span className="final-decor final-decor-left" aria-hidden="true" /><span className="final-decor final-decor-right" aria-hidden="true" /></div></section>
+    <footer className="site-footer"><div className="container footer-inner"><span><strong>Claudir J. Corrêa</strong><small>Terapeuta Integrativo</small></span><p>Atendimento on-line · ABRAPH 07853AB</p><a href="#inicio">Voltar ao início <Icon name="move-up-right" size={15} /></a></div></footer>
+  </main>;
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<HomePage />);
+</script>
+</body>
+</html>
