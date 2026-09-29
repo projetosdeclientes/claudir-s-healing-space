@@ -220,7 +220,6 @@ body { min-width: 320px; }
 .card-number { color: var(--border); font: 800 .8rem var(--font-display); }
 .pain-card h3 { font: 800 1.02rem var(--font-display); margin: 24px 0 8px; }
 .pain-card p { font-size: .85rem; line-height: 1.65; color: var(--muted-foreground); margin: 0; max-width: 265px; }
-.pain-arrow { position: absolute; right: 26px; bottom: 24px; color: var(--sage); }
 
 .change-section { background: var(--soft-mint); border-block: 1px solid color-mix(in oklab, var(--sage) 14%, transparent); }
 .change-inner { position: relative; text-align: center; padding: 70px 0 74px; }
