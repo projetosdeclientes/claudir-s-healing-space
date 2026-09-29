@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import { Activity, ArrowDown, ArrowRight, ArrowUpRight, BadgeCheck, Brain, Check, CircleHelp, Clock3, Cloud, Heart, HeartHandshake, LockKeyhole, MoveUpRight, Play, Quote, ShieldCheck, Sparkles, Star, UserRound, UsersRound, Waves, Zap } from "lucide-react";
+import { Activity, ArrowDown, ArrowRight, ArrowUpRight, BadgeCheck, Brain, Check, CircleHelp, Clock3, Cloud, Heart, HeartHandshake, LockKeyhole, MessageCircle, MoveUpRight, Play, Quote, ShieldCheck, Sparkles, Star, UserRound, UsersRound, Waves, Zap } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { TestimonialsMarquee } from "@/components/TestimonialsMarquee";
