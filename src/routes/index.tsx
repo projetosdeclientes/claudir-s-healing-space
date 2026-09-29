@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
-import { Activity, ArrowDown, ArrowRight, ArrowUpRight, BadgeCheck, Brain, Check, CircleHelp, Clock3, Cloud, Heart, HeartHandshake, LockKeyhole, MoveUpRight, Play, Quote, ShieldCheck, Sparkles, Star, UserRound, UsersRound, Waves, Zap } from "lucide-react";
+import { Activity, ArrowDown, ArrowUpRight, BadgeCheck, Brain, Check, CircleHelp, Clock3, Cloud, Heart, HeartHandshake, LockKeyhole, MoveUpRight, Play, Quote, ShieldCheck, Sparkles, Star, UserRound, UsersRound, Waves, Zap } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { TestimonialsMarquee } from "@/components/TestimonialsMarquee";
@@ -115,7 +115,7 @@ function HomePage() {
           <div className="pain-header"><SectionHeading eyebrow="Identificação" title="Isso tem soado familiar pra você?" description="Cada pessoa vive isso de um jeito. Talvez você se reconheça em uma ou mais dessas situações:" /><div className="header-ornament" aria-hidden="true"><span>01</span><i /></div></div>
         </RevealWrapper>
         <RevealWrapper delay={2}>
-          <div className="pain-grid">{pains.map(({ icon: Icon, title, text }, index) => <article className="pain-card" key={title}><div className="pain-card-top"><span className="icon-box"><Icon size={25} strokeWidth={1.65} /></span><span className="card-number">0{index + 1}</span></div><h3>{title}</h3><p>{text}</p><ArrowRight className="pain-arrow" size={17} /></article>)}</div>
+          <div className="pain-grid">{pains.map(({ icon: Icon, title, text }, index) => <article className="pain-card" key={title}><div className="pain-card-top"><span className="icon-box"><Icon size={25} strokeWidth={1.65} /></span><span className="card-number">0{index + 1}</span></div><h3>{title}</h3><p>{text}</p></article>)}</div>
         </RevealWrapper>
       </div>
     </section>
