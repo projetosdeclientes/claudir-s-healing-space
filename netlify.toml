@@ -6,4 +6,4 @@
   node_bundler = "esbuild"
 
 [[plugins]]
-  package = "@netlify/plugin-tanstack-start"
+  package = "@netlify/plugin-tanstack-router"
