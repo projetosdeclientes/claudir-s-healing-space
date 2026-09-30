@@ -6,7 +6,7 @@ import { WhatsAppLink } from "@/components/WhatsAppLink";
 import { TestimonialsMarquee } from "@/components/TestimonialsMarquee";
 import logoNavbar from "@/assets/logo-abraph-navbar.png.asset.json";
 import logoSelo from "@/assets/logo-abraph-selo.png.asset.json";
-import heroCoast from "@/assets/hero-coast.jpg";
+import HeroSection from "@/components/ui/hero-section";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -91,23 +91,29 @@ function HomePage() {
       </div>
     </header>
 
-    <section id="inicio" className="hero">
-      <img className="hero-image" src={heroCoast} width={1536} height={1024} alt="Mar tranquilo ao amanhecer" fetchPriority="high" />
-      <div className="hero-shade" />
-      <div className="container hero-inner">
-        <div className="hero-top"><span className="hero-monogram">C<span className="hero-monogram-dot">·</span>J<span className="hero-monogram-dot">·</span>C</span><span className="hero-top-name">CLAUDIR J. CORRÊA <span> / </span> TERAPEUTA INTEGRATIVO</span></div>
-        <div className="hero-content">
-          <span className="hero-tag"><span className="live-dot" /> Atendimento 100% on-line</span>
-          <h1>Ansiedade, estresse ou a sensação de que os pensamentos não param?</h1>
-          <p>Você não precisa continuar carregando isso sozinho. Se a sensação de sobrecarga, medo ou insegurança tem tomado mais espaço do que você gostaria, saiba que existe um caminho para respirar com mais leveza. Aqui você encontra um espaço de escuta verdadeira, sem pressa e sem julgamento, para colocar em palavras o que sente e começar, no seu tempo, a cuidar de você.</p>
-          <WhatsAppLink variant="light" arrow className="hero-cta" message="Olá, Claudir! Gostaria de conversar sobre o atendimento on-line.">Falar agora no WhatsApp</WhatsAppLink>
-          <div className="hero-trust" aria-label="Informações sobre o atendimento">
-            <span><Clock3 size={16} /> Atuação desde 2007</span><span><Brain size={16} /> TRG como abordagem principal</span><span><BadgeCheck size={16} /> Registro ABRAPH 07853AB</span>
-          </div>
-        </div>
-        <a className="hero-scroll" href="#identificacao" aria-label="Ir para a próxima seção"><span>EXPLORE A PÁGINA</span><ArrowDown size={16} /></a>
+    <HeroSection
+      monogram="C·J·C"
+      topName="CLAUDIR J. CORRÊA / TERAPEUTA INTEGRATIVO"
+      tag="Atendimento 100% on-line"
+      title="Ansiedade, estresse ou a sensação de que os pensamentos não param?"
+      description="Você não precisa continuar carregando isso sozinho. Se a sensação de sobrecarga, medo ou insegurança tem tomado mais espaço do que você gostaria, saiba que existe um caminho para respirar com mais leveza. Aqui você encontra um espaço de escuta verdadeira, sem pressa e sem julgamento, para colocar em palavras o que sente e começar, no seu tempo, a cuidar de você."
+      color1="#1e3a5f"
+      color2="#e8f4fd"
+      speed={1}
+    >
+      <WhatsAppLink variant="light" arrow className="hero-cta" message="Olá, Claudir! Gostaria de conversar sobre o atendimento on-line.">
+        Falar agora no WhatsApp
+      </WhatsAppLink>
+      <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 text-white/70 text-sm md:text-base" aria-label="Informações sobre o atendimento">
+        <span className="flex items-center gap-2"><Clock3 size={16} /> Atuação desde 2007</span>
+        <span className="flex items-center gap-2"><Brain size={16} /> TRG como abordagem principal</span>
+        <span className="flex items-center gap-2"><BadgeCheck size={16} /> Registro ABRAPH 07853AB</span>
       </div>
-    </section>
+      <a href="#identificacao" className="flex items-center gap-2 text-white/70 text-sm font-medium tracking-wide uppercase hover:text-white transition-colors" aria-label="Ir para a próxima seção">
+        <span>EXPLORE A PÁGINA</span>
+        <ArrowDown size={16} />
+      </a>
+    </HeroSection>
 
     <section id="identificacao" className="section pain-section">
       <div className="container">
