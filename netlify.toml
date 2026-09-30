@@ -1,11 +1,6 @@
 [build]
   command = "npm run build"
-  publish = ".output/public"
+  publish = ".netlify/static"
 
 [functions]
   node_bundler = "esbuild"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
